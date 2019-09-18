@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="dribble" transform="translate(0.5 0.5)">
+    <circle id="Ellipse_5" data-name="Ellipse 5" class="cls-1" cx="8.339" cy="8.339" r="8.339" transform="translate(0 0)"/>
+    <path id="Path_17" data-name="Path 17" class="cls-2" d="M295.518,194.888c2.826,3.28,4.651,8.468,4.651,14.3q0,.685-.033,1.355" transform="translate(-290.164 -194.207)"/>
+    <path id="Path_18" data-name="Path 18" class="cls-2" d="M304.783,197.349a24.3,24.3,0,0,1-12.606,3.262q-1.328,0-2.609-.119" transform="translate(-289.535 -194.191)"/>
+    <path id="Path_19" data-name="Path 19" class="cls-2" d="M292.059,208.818a23.962,23.962,0,0,1,12.556-3.286c.9,0,1.991.053,2.853.135" transform="translate(-290.804 -195.647)"/>
+  </g>
+</svg>
