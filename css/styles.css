@@ -212,21 +212,23 @@ ul {
     transition: .5s ease;
     background-color: #008CBA;
     box-sizing: border-box;
-    padding:25px;
-    line-height: 150px;
+   
+   
+    
+    
     
  
 }
 
 .slider span {
-    
-    width:100%;
-    text-align: center;
-    display: inline-block;
+   position: absolute;
+   text-align:center;
+   top:50%;
+   width:100%;
+   transform:translateY(-50%);
+  
+   
  
- vertical-align: middle;
- 
- line-height: normal;
    
     
 }
