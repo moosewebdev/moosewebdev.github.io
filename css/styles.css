@@ -326,6 +326,43 @@ ul {
     }
 }
 
+@media only screen and (min-width:1171px){
+  
+    .piece {
+        width:75%;
+        margin-top: 40px;
+        margin-bottom:80px;
+    }
+    .piece:nth-child(odd){
+        
+        margin-left:25%;
+    }
+    .piece:nth-child(even){
+        margin-right:25%;
+       
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Clearfix **/
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 
 
 
