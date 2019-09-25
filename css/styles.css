@@ -18,10 +18,19 @@ nav {
     position:fixed;
     width:100%;
     top:0;
-    /*while moving*/
+    background-color:none;
+    box-shadow: none;
+    transition: background-color, box-shadow, .5s ease-in-out;
+
+
+}
+.show{
+   
     background-color:#133336;
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.21);
-
+    transition: background-color, box-shadow, .5s ease-in-out;
+    
+    
 }
 
 .container {
@@ -62,6 +71,7 @@ padding:0px 10px 0px 10px;
 a.active{
     border-bottom:5px solid #0ACAD6;
     opacity: 1;
+    
  }
 label {
     
