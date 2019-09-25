@@ -326,6 +326,39 @@ ul {
     }
 }
 
+@media only screen and (min-width:900px){
+  
+    .left, .right {
+        width:50%;
+        float:left;
+        box-sizing:border-box;
+    }
+    .right {
+        padding-left:15%;
+    }
+    .tools {
+        text-align:left;
+        margin: 35px 0px;
+    }
+    .right .tools {
+        margin-top:0;
+    }
+    .piece {
+        width:75%;
+        margin-top: 40px;
+        margin-bottom:80px;
+    }
+    .piece:nth-child(odd){
+        
+        margin-left:25%;
+    }
+    .piece:nth-child(even){
+        margin-right:25%;
+       
+    }
+
+}
+
 @media only screen and (min-width:1171px){
   
     .piece {
