@@ -29,8 +29,7 @@ $(document).ready(function(){
                 $(this).addClass('active');
                 $(this).siblings().removeClass('active');
                 console.log("hello");
-            }else if (scrollbarLocation < 1237) {
-                $('.scroll').removeClass('active');
+            
                 
             }
         });
