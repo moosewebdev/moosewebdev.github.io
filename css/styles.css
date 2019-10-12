@@ -13,7 +13,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
-nav {
+header {
     z-index: 1000;
     position:fixed;
     width:100%;
@@ -39,25 +39,23 @@ margin:0 auto;
 padding:0px 10px 0px 10px;
 
 }
-.nav {
+header nav {
     
-   
-    text-align:right;
-    height:70px;
-    line-height: 70px;
+    
     float:right;
+    vertical-align: middle;
+   
+    
 
 }
 
 
-.nav-links {
-    
-    margin:0 0px 0 0;
-    
-}
 
-.nav-links a {
-    font-weight:600;
+nav a {
+    display:inline;
+    text-decoration: none;
+    color:#fff;
+    /*font-weight:600;
     font-size: 1.1em;
     clear: right;
     padding-bottom:5px;
@@ -65,7 +63,26 @@ padding:0px 10px 0px 10px;
     color:#fff;
     margin: 0 .5em;
     line-height: 70px;
+    opacity: .75;*/
+}
+nav li {
+    display:inline;
+    
+    margin: 0 .5em;
+    font-weight:600;
+    font-size: 1.1em;
+    clear: right;
+    line-height: 70px;
     opacity: .75;
+    /*font-weight:600;
+    font-size: 1.1em;
+    clear: right;
+    padding-bottom:5px;
+    text-decoration: none;
+    color:#fff;
+    margin: 0 .5em;
+    line-height: 70px;
+    opacity: .75;*/
 }
 
 a.active{
@@ -89,6 +106,7 @@ display:none;
 }
 
 .upper-fold {
+    position:relative;
     background-color:#133336;
     background-image:url("/images/Rectangle\ 16.svg"); 
     background-repeat: no-repeat;
@@ -142,7 +160,7 @@ p {
     font-weight: 300;
 
 }
-ul {
+.list {
     font-size:1.1em;
     line-height: 1.6em;
     color: #133336;
@@ -299,7 +317,71 @@ ul {
 
 }
 
+/* Project page*/
 
+.project-header {
+    width:100%;
+    position:relative;
+    background-image: url("/images/header-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 55%;
+}
+
+#curve {
+    position:absolute;
+    bottom:0;
+    
+    }
+
+#project-title {
+    position: absolute;
+    bottom:20%;
+}
+#project-title span {
+    color: #0ACAD6;
+}
+
+
+.pRole em {
+    margin:0;
+    opacity: 1;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 5px solid #0ACAD6;
+
+}
+
+section {
+    padding:2em 0;
+}
+.pAbout .left {
+    text-align: center;
+}
+
+.pAbout p {
+    color:#133336;
+    margin-top:2em;
+}
+.psectionT {
+   
+    border-bottom: 5px solid #0ACAD6;
+    display: inline;
+    
+}
+
+.right img {
+
+    width:100%;
+
+}
+
+.journey {
+    background-color:#098791;
+    color:#fff;
+}
+.journey p {
+    color:#fff;
+}
 
 @media only screen and (max-width:640px){
  

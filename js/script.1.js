@@ -4,7 +4,7 @@ $(document).ready(function(){
     var navElement = $("header");
     //smooth scrolling
     scrollLink.click(function(e){
-        e.preventDefault();
+        
         $('body,html').animate({scrollTop:$(this.hash).offset().top -75}, 700);
     });
     
@@ -25,10 +25,9 @@ $(document).ready(function(){
             var sectionOffset = $(this.hash).offset().top;
 
             if (sectionOffset <= scrollbarLocation){
-                /*$(this).parent().sibling().child().removeClass('active');*/
-                console.log($(this).parent().parent().children().children().removeClass('active'));
-                $(this).addClass('active');
                 
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
                 console.log("hello");
             
                 
