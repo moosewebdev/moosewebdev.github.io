@@ -276,7 +276,7 @@ p {
     color:#fff;
     margin-bottom:0;
 }
-.piece:hover > .slider {
+.piece a:hover > .slider {
 
     opacity:1;
 }
@@ -304,9 +304,13 @@ p {
 
 }
 
-.footer-tagline em {
+.footer .tagline em {
 
     margin:0px 0px 10px 0px;
+}
+.footer-tagline p em span:first-child{
+    margin-left:0;
+    
 }
 
 .copyright span{
@@ -385,15 +389,10 @@ section {
 
 @media only screen and (max-width:640px){
  
-    label{
-        display:block;
-        cursor:pointer;
-    }
    
    
-    #toggle:checked + .nav-links {
-        display:block;
-    }
+   
+    
 
     .piece {
         margin-bottom:2em;
