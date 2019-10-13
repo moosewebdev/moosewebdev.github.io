@@ -80,7 +80,7 @@ nav li {
     font-size: 1.3em;
     clear: right;
     line-height: 70px;
-    
+
     /*font-weight:600;
     font-size: 1.1em;
     clear: right;
@@ -122,39 +122,99 @@ label {
     background-size: cover;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
+
 .upper-fold::before {
     content: ".";
     position: absolute;
-    display:inline-block;
-    opacity:.15;
-        width: 500px;
-        height: 500px;
-        background-color: #0CB1C4;
-        border-radius: 25px;
-        right:100px;
-        animation-name: spin;
-        animation-duration: 15000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear; 
-        /* transform: rotate(3deg); */
-         /* transform: rotate(0.3rad);/ */
-         /* transform: rotate(3grad); */ 
-         /* transform: rotate(.03turn);  */
-      }
-      
-      @keyframes spin {
-          from {
-              transform:rotate(0deg);
-          }
-          to {
-              transform:rotate(360deg);
-          }
-      }
+    display: inline-block;
+    opacity: .15;
+    width: 600px;
+    height: 600px;
+    background-color: #0CB1C4;
+    border-radius: 25px;
+    right: 20em;
+    top: 5em;
+    animation-name: spin;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.triangle {
+    position: absolute;
+    right: 15em;
+    bottom: 10em;
+    background-color: #0CB1C4;
+    opacity: .5;
+    text-align: left;
+    transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.triangle::before,
+.triangle::after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+}
+
+
+
+.triangle,
+.triangle::before,
+.triangle::after {
+    width: 15em;
+    height: 15em;
+    border-top-right-radius: 10%;
+    z-index: 0;
+
+}
+
+.triangle:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+.triangle:after {
+    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
+@keyframes spinT {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 #intro {
+    position: relative;
     padding: 35vh 0 0 5%;
-
+    z-index: 1;
 }
 
 h1 {
@@ -212,6 +272,7 @@ p {
     -webkit-columns: 2;
     -moz-columns: 2;
     margin: 20px 0px 0px 20px;
+    list-style-position: inside;
 }
 
 .intro-about li {
@@ -446,6 +507,18 @@ section {
 }
 
 @media only screen and (max-width:640px) {
+
+    .triangle {
+        display:none;
+    
+    }
+
+    .upper-fold::before {
+        right:-5em;
+        top:8em;
+        width:15em;
+        height:15em;
+    }
 
 
 
