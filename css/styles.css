@@ -160,14 +160,15 @@ label {
 
 .triangle {
     position: absolute;
-    right: 15em;
-    bottom: 10em;
+    right: 25em;
+    bottom: 20em;
     background-color: #0CB1C4;
     opacity: .5;
     text-align: left;
+    border-top-right-radius: 10%;
     transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
     animation-name: spin;
-    animation-duration: 10000ms;
+    animation-duration: 15000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
@@ -178,6 +179,7 @@ label {
     content: '';
     position: absolute;
     background-color: inherit;
+    border-top-right-radius: 15%;
 }
 
 
@@ -187,7 +189,7 @@ label {
 .triangle::after {
     width: 15em;
     height: 15em;
-    border-top-right-radius: 10%;
+    
     z-index: 0;
 
 }
