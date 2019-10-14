@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45.897" height="45" viewBox="0 0 45.897 45" aria-labelledby="title">
-<title id="title" lang="en">Illustrator</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="45.897" height="45" viewBox="0 0 45.897 45" >
+
   <defs>
     <style>
       .cls-1 {
         fill: #d6620a;
-        fill-rule: evenodd;
+        fill-rule: evenodd;               
       }
     </style>
   </defs>

@@ -171,7 +171,9 @@ ul {
 
 }
 
-
+.piece {
+    border-radius:25px;
+}
 
 .footer {
     text-align: center;
