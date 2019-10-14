@@ -340,6 +340,28 @@ p {
     display: inline;
 }
 
+.typing {
+    position:absolute;
+    margin-left:15px;
+}
+.typing::after {
+    position:relative;
+    content:"";
+    width:1px;
+    height:5%;
+    border-right:2px solid white;
+    animation: blink 0.5s infinite ease;
+
+}
+@keyframes blink{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
 .tools {
     text-align: center;
     margin: 35px 15px;

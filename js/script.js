@@ -1,5 +1,14 @@
 $(document).ready(function(){
-
+    $(".typing").typed({
+        strings:["UX/UI Designer","Web Designer","Front-end Developer"],
+        typeSpeed:50,
+        startDelay:0,
+        backSpeed: 35,
+        backDelay: 450,
+        loop: true,
+        cursorChar:"",
+        contextType: 'html'
+    });
     var scrollLink = $('.scroll');
     var navElement = $("header");
     //smooth scrolling
@@ -37,3 +46,5 @@ $(document).ready(function(){
     })
 
 });
+
+
