@@ -9,6 +9,7 @@ $(document).ready(function(){
         cursorChar:"",
         contextType: 'html'
     });
+    
     var scrollLink = $('.scroll');
     var navElement = $("header");
     //smooth scrolling

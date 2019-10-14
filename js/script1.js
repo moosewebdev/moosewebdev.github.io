@@ -1,7 +1,7 @@
 $(document).ready(function(){
-
     var scrollLink = $('.scroll');
     var navElement = $("header");
+    $('.lightb').simpleLightbox();
     //smooth scrolling
     scrollLink.click(function(e){
         
@@ -17,22 +17,10 @@ $(document).ready(function(){
         }else{
             navElement.removeClass('show');
         }
-        var scrollbarLocation = $(this).scrollTop() + 100;
-        console.log(scrollbarLocation);
-        console.log(scrollbarLocation -75);
-        scrollLink.each(function(){
-
-            var sectionOffset = $(this.hash).offset().top;
-
-            if (sectionOffset <= scrollbarLocation){
-                
-                $(this).addClass('active');
-                $(this).siblings().removeClass('active');
-                console.log("hello");
+        
             
                 
-            }
         });
-    })
+    
 
 });

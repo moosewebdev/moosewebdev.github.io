@@ -264,7 +264,7 @@ label {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.7em;
     color: #fff;
     font-weight: 600;
 
@@ -571,15 +571,15 @@ section {
 }
 
 .psectionT {
-
+    
     border-bottom: 5px solid #0ACAD6;
     display: inline;
-
+    text-align: right;
 }
 
-.right img {
+.pAbout img {
 
-    width: 100%;
+    
 
 }
 
@@ -591,6 +591,14 @@ section {
 
 .journey p {
     color: #fff;
+}
+
+.Final {
+    text-align: center;
+}
+
+.Final p {
+    margin-bottom:2em;
 }
 
 @media only screen and (max-width:640px) {
