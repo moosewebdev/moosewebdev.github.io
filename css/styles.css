@@ -133,8 +133,8 @@ label {
     position: absolute;
     display: inline-block;
     opacity: .15;
-    width: 600px;
-    height: 600px;
+    width: 25em;
+    height: 25em;
     background-color: #0CB1C4;
     border-radius: 25px;
     right: 20em;
@@ -159,19 +159,59 @@ label {
     }
 }
 
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+    border-radius:50%;
+    position: absolute;
+    background-color:#098791;
+
+}
+
+.circle1 {
+    
+    width:1em;
+    height: 1em;;
+    top:10%;
+    left:15%;
+}
+.circle2 {
+    opacity:.85;
+    width:10em;
+    height: 10em;;
+    bottom:5%;
+    left:17%;
+}
+
+.circle3 {
+    opacity:.65;
+    width:10em;
+    height: 10em;;
+    top:10%;
+    left:50%;
+}
+
+.circle4 {
+    opacity:.5;
+    width:4em;
+    height: 4em;;
+    bottom:10%;
+    right:15%;
+}
 
 
 .triangle {
     position: absolute;
-    right: 25em;
-    bottom: 20em;
+    right: 40%;
+    bottom: 15%;
     background-color: #0CB1C4;
     opacity: .5;
     text-align: left;
     border-top-right-radius: 10%;
     transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
     animation-name: spin;
-    animation-duration: 15000ms;
+    animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
@@ -190,8 +230,8 @@ label {
 .triangle,
 .triangle::before,
 .triangle::after {
-    width: 15em;
-    height: 15em;
+    width: 4em;
+    height: 4em;
     
     z-index: 0;
 
@@ -511,6 +551,7 @@ section {
 .journey {
     background-color: #098791;
     color: #fff;
+    text-align: center;
 }
 
 .journey p {
