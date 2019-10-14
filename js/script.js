@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".typing").typed({
-        strings:["UX/UI Designer","Web Designer","Front-end Developer"],
+        strings:["UX/UI Designer.","Web Designer.","Front-end Developer."],
         typeSpeed:50,
         startDelay:0,
         backSpeed: 35,
