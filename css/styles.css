@@ -125,6 +125,7 @@ label {
     background-size: cover;
     height: 100vh;
     width: 100%;
+    min-height:731px; ;
     overflow: hidden;
 }
 
@@ -263,7 +264,7 @@ label {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #fff;
     font-weight: 600;
 
@@ -530,6 +531,7 @@ z-index: 1;
     background-size: cover;
     background-position: center;
     height: 55%;
+    min-height: 450px;;
 }
 
 #curve {
@@ -607,9 +609,6 @@ section {
 
 
 
-
-
-
     .piece {
         margin-bottom: 2em;
     }
@@ -621,6 +620,18 @@ section {
     .upper-fold {
         background-image: url("/images/topangle-bg.svg");
 
+    }
+    h1 {
+        font-size: 3em;
+    }
+    
+
+    .upper-fold::before {
+        top:15%;
+        right:0;
+    }
+    .triangle {
+        display:none;    
     }
 
     #intro {
@@ -639,9 +650,7 @@ section {
 
     }
 
-    h1 {
-        font-size: 5em;
-    }
+    
 
     .piece {
         margin-bottom: 2em;
@@ -658,7 +667,13 @@ section {
         float: left;
         box-sizing: border-box;
     }
-
+    .triangle {
+        display:block;    
+    }
+    .upper-fold::before {
+        top:15%;
+        right:0;
+    }
     .right {
         padding-left: 15%;
     }
@@ -695,6 +710,9 @@ section {
         margin-right: 25%;
 
     }
+    h1 {
+        font-size: 5em;
+    }
 
 }
 
@@ -714,6 +732,10 @@ section {
     .piece:nth-child(even) {
         margin-right: 25%;
 
+    }
+    .upper-fold::before {
+        top:15%;
+        right:0;
     }
 
 }
