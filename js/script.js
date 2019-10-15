@@ -10,12 +10,44 @@ $(document).ready(function(){
         contextType: 'html'
     });
     
+
+
+    // menu open fa and close
     var scrollLink = $('.scroll');
     var navElement = $("header");
+    var responsiveNav = $('.rMenu');
+    var togElement = $('#toggle');
+    var toggle = false;
+    var newIcon = '<i class="fas fa-times"></i>';
+    var oldIcon = '<i class="fa fa-bars"></i>';
+
+    $('#toggle').click(function(){
+        console.log('clicked');
+
+        if (toggle == false){
+            responsiveNav.addClass('rMenuShow'); 
+            toggle = true; 
+            togElement.html(newIcon); 
+        } else if (toggle == true) {
+            responsiveNav.removeClass('rMenuShow');
+            toggle = false;
+            togElement.html(oldIcon);
+
+        }
+
+    });
+
+
+    
+
+
     //smooth scrolling
     scrollLink.click(function(e){
         e.preventDefault();
         $('body,html').animate({scrollTop:$(this.hash).offset().top -75}, 700);
+        responsiveNav.removeClass('rMenuShow');
+        togElement.html(oldIcon);
+        toggle = false;
     });
     
 
