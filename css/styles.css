@@ -51,19 +51,31 @@ header {
 .rMenu {
     position: absolute;
     top:0;
-    z-index: -1;;
+    z-index: -1;
+    display:flex;
     background-color:#145A5E;
-    display:none;
-    align-items: center;
     
+    align-items: center;
+   
     height:100vh;
     width:100%;
+
+    clip-path: circle(100px at 90% -20% );
+    -webkit-clip-path:circle(100px at 90% -20% );
+
+    transition: all .6s ease-out;
 }
 .rMenuClose{
+    opacity:0;
     display:none;
 }
 .rMenuShow {
+    clip-path: circle(1000px at 90% 5% );
+    -webkit-clip-path:circle(1000px at 90% 5% );
+    opacity:1;
     display:flex;
+    
+
 }
 
 .rMenu ul {
@@ -107,11 +119,14 @@ label {
 }
 
 #toggle {
+    position:absolute;
+    top:25%;
+    right:10%;
     color:#fff;
     font-size:2em;
     float:right;
     cursor: pointer;
-    line-height: 70px;;
+    
 
 }
 
