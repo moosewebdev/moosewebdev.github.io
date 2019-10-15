@@ -395,6 +395,10 @@ p {
     opacity: .1;
 }
 
+#about,
+#work {
+    padding-top:2em;
+}
 .small-title {
     position: relative;
     top: -40px;
