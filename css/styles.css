@@ -569,7 +569,11 @@ section {
     padding:3em 0 3em 0;
 }
 
-
+.pAbout img,
+.journey img,
+.Final img {
+    width:100%;
+}
 .pAbout p,
 .journey p,
 .Final p {
