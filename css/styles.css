@@ -996,17 +996,6 @@ section {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /** Clearfix **/
 .clear::after {
     content: "";
