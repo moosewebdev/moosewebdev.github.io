@@ -575,7 +575,7 @@ p {
     background-position: center;
     height: 55%;
     min-height: 450px;
-    ;
+    
 }
 
 #curve {
@@ -678,8 +678,16 @@ section {
 
 
 /****************** Project page betterU homepage*******************************************/
-.project-header {
+
+.proj2 {
+    width: 100%;
+    position: relative;
     background-image: url("/images/header-image-2.png");
+    background-size: cover;
+    background-position: center;
+    height: 55%;
+    min-height: 450px;
+    
 }
 
 .btmFooter {
