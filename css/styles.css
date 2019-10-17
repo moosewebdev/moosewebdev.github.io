@@ -26,8 +26,12 @@ header {
     width: 100%;
     top: 0;
     background-color: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: background-color, .5s ease-in-out, -webkit-box-shadow;
+    transition: background-color, .5s ease-in-out, -webkit-box-shadow;
     transition: background-color, box-shadow, .5s ease-in-out;
+    transition: background-color, box-shadow, .5s ease-in-out, -webkit-box-shadow;
 
 
 }
@@ -35,8 +39,12 @@ header {
 .show {
 
     background-color: #133336;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
+    -webkit-transition: background-color, .5s ease-in-out, -webkit-box-shadow;
+    transition: background-color, .5s ease-in-out, -webkit-box-shadow;
     transition: background-color, box-shadow, .5s ease-in-out;
+    transition: background-color, box-shadow, .5s ease-in-out, -webkit-box-shadow;
 
 
 }
@@ -56,16 +64,24 @@ header {
     position: absolute;
     top: 0;
     z-index: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #145A5E;
 
-    align-items: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
 
     height: 100vh;
     width: 100%;
 
     clip-path: circle(100px at 90% -20%);
     -webkit-clip-path: circle(100px at 90% -20%);
+
+    -webkit-transition: all .6s ease-out;
 
     transition: all .6s ease-out;
 }
@@ -79,6 +95,8 @@ header {
     clip-path: circle(1000px at 90% 5%);
     -webkit-clip-path: circle(1000px at 90% 5%);
     opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
 
@@ -166,23 +184,41 @@ label {
     border-radius: 25px;
     right: 20em;
     top: 5em;
-    animation-name: spin;
-    animation-duration: 15000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 15000ms;
+            animation-duration: 15000ms;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
     /* transform: rotate(3deg); */
     /* transform: rotate(0.3rad);/ */
     /* transform: rotate(3grad); */
     /* transform: rotate(.03turn);  */
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
     from {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 
@@ -241,11 +277,16 @@ label {
     opacity: .5;
     text-align: left;
     border-top-right-radius: 10%;
-    transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
-    animation-name: spin;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
+            transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 5000ms;
+            animation-duration: 5000ms;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
 
 }
 
@@ -270,20 +311,36 @@ label {
 }
 
 .triangle:before {
-    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+    -webkit-transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+            transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
 }
 
 .triangle:after {
-    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+    -webkit-transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+            transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
+@-webkit-keyframes spinT {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
 }
 
 @keyframes spinT {
     from {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 
@@ -384,8 +441,19 @@ p {
     width: 1px;
     height: 5%;
     border-right: 2px solid white;
-    animation: blink 0.5s infinite ease;
+    -webkit-animation: blink 0.5s infinite ease;
+            animation: blink 0.5s infinite ease;
 
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes blink {
@@ -442,7 +510,8 @@ p {
 
 .piece {
     position: relative;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.38);
+    -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.38);
+            box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.38);
     overflow: hidden;
 
 }
@@ -457,6 +526,7 @@ p {
     display: block;
     width: 100%;
     height: auto;
+    -webkit-transition: .5s ease;
     transition: .5s ease;
 }
 
@@ -477,9 +547,11 @@ p {
     height: 100%;
     width: 100%;
     opacity: 0;
+    -webkit-transition: .5s ease;
     transition: .5s ease;
     background-color: #008CBA;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
 
 }
@@ -489,7 +561,8 @@ p {
     text-align: center;
     top: 50%;
     width: 100%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     opacity: 0;
 
 }
@@ -517,7 +590,8 @@ p {
 }
 
 .piece a:hover>img {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     z-index: -1;
 }
 
@@ -701,7 +775,8 @@ section {
     margin: 0;
     font-size: 1em;
     color: #133336;
-    columns: 1;
+    -webkit-columns: 1;
+            columns: 1;
 
 
 
@@ -857,7 +932,8 @@ section {
         margin: 0;
         font-size: 1em;
         color: #133336;
-        columns: 1;
+        -webkit-columns: 1;
+                columns: 1;
 
 
 
@@ -883,7 +959,8 @@ section {
     .right {
         width: 50%;
         float: left;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     .triangle {
@@ -952,7 +1029,8 @@ section {
         margin: 0;
         font-size: 1em;
         color: #133336;
-        columns: 1;
+        -webkit-columns: 1;
+                columns: 1;
 
 
 
