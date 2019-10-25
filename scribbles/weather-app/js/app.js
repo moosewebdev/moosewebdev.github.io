@@ -74,12 +74,12 @@ window.addEventListener('load', function appStart() {
 
 
 
-    sunUpEle.innerHTML = sunUpdate.getHours() + ":" + sunUpdate.getMinutes() + "AM";
+    sunUpEle.innerHTML = sunUpdate.getHours() + ":" + sunUpdate.getMinutes() + " AM";
     //checks if minutes is less than 10 if so adds 0 infront
     if (sunDowndate.getMinutes() < 10) {
-      sunDownEle.innerHTML = sunDowndate.getHours() + ":0" + sunDowndate.getMinutes()
+      sunDownEle.innerHTML = sunDowndate.getHours() + ":0" + sunDowndate.getMinutes() + " PM";
     } else {
-      sunDownEle.innerHTML = sunDowndate.getHours() + ":" + sunDowndate.getMinutes() + "PM";
+      sunDownEle.innerHTML = sunDowndate.getHours() + ":" + sunDowndate.getMinutes() + " PM";
     }
 
   }
