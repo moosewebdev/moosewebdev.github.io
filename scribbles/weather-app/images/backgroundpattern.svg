@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0.82;
+      }
+
+      .cls-4 {
+        opacity: 0.6;
+      }
+
+      .cls-5 {
+        opacity: 0.9;
+      }
+
+      .cls-6 {
+        opacity: 0.45;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_28" data-name="Rectangle 28" class="cls-1" width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="backgroundpattern" class="cls-2">
+    <g id="Group_13" data-name="Group 13" transform="translate(572.389 -498.775) rotate(30)">
+      <rect id="Rectangle_17" data-name="Rectangle 17" class="cls-3" width="142" height="576" rx="71" transform="translate(152 366)"/>
+      <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-4" width="71" height="720" rx="35.5" transform="translate(187 1191)"/>
+      <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-1" width="280" height="1460" rx="140" transform="translate(1354 669)"/>
+      <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-5" width="104" height="744" rx="52" transform="translate(1421 -282)"/>
+      <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-6" width="43" height="308" rx="21.5" transform="translate(1260 -141)"/>
+      <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-6" width="43" height="469" rx="21.5" transform="translate(1260 267)"/>
+      <rect id="Rectangle_23" data-name="Rectangle 23" class="cls-6" width="43" height="469" rx="21.5" transform="translate(1260 935)"/>
+      <rect id="Rectangle_24" data-name="Rectangle 24" class="cls-4" width="45" height="451" rx="22.5" transform="translate(519.243 1337.462)"/>
+      <rect id="Rectangle_25" data-name="Rectangle 25" class="cls-4" width="45" height="295" rx="22.5" transform="translate(519.328 927.609)"/>
+      <rect id="Rectangle_26" data-name="Rectangle 26" class="cls-4" width="45" height="391" rx="22.5" transform="translate(520.655 293.907)"/>
+      <rect id="Rectangle_27" data-name="Rectangle 27" class="cls-4" width="66" height="572" rx="33" transform="translate(-185.757 413.367)"/>
+    </g>
+  </g>
+</svg>
