@@ -346,8 +346,11 @@ label {
 
 
 #intro {
-    position: relative;
-    padding: 35vh 0 0 5%;
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    
     z-index: 1;
 }
 
@@ -596,7 +599,7 @@ p {
 }
 #scribbles {
     margin-top: 2em ;
-    margin-bottom: 2em ;
+    margin-bottom: 5em ;
     text-align: center;
    
 }
@@ -914,10 +917,7 @@ section {
         display: none;
     }
 
-    #intro {
-        padding: 35vh 0 0 0;
-
-    }
+   
 
     .container {
         width: 95%;
