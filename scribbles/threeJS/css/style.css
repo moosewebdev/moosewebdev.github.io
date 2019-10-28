@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+canvas {
+    width: 100%;
+    height: 100%
+}
+
+
+
+.description {
+    background-color:white;
+    margin:auto;
+    text-align: center;
+}.description p {
+    padding-top:10px;
+}
