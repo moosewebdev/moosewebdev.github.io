@@ -346,8 +346,11 @@ label {
 
 
 #intro {
-    position: relative;
-    padding: 35vh 0 0 5%;
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    
     z-index: 1;
 }
 
@@ -593,6 +596,77 @@ p {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     z-index: -1;
+}
+#scribbles {
+    margin-top: 2em ;
+    margin-bottom: 5em ;
+    text-align: center;
+   
+}
+
+#scribbles h2 {
+    font-size:1.2em;
+}
+
+#scribbles .container {
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.scribble {
+    
+    position:relative;
+    overflow:hidden;
+    max-height: 193px;
+}
+
+.sSlider {
+    position: absolute;
+    top:0;
+    left:0;
+    left:-250px;
+    width:100%;
+    height:100%;
+    
+    transition: transform .3s ease-in-out;
+    
+}
+
+.scribble a:hover > .sSlider  {
+    
+    transform: translateX(250px);
+   
+}
+
+.scribble img {
+    transition: transform .3s ease-in-out;
+
+}
+.scribble a:hover > img {
+    
+    
+    transform: scale(1.5);
+   
+}
+
+
+.sSlider h4 {
+    color:white;
+    position:absolute;
+    bottom:10%;
+    left:10%;
+    
+    
+}
+
+.sliderBG {
+    background-color:#008CBA;
+    width:100%;
+    height:100%;
+    opacity:.75;
+
 }
 
 .footer {
@@ -843,10 +917,7 @@ section {
         display: none;
     }
 
-    #intro {
-        padding: 35vh 0 0 0;
-
-    }
+   
 
     .container {
         width: 95%;
