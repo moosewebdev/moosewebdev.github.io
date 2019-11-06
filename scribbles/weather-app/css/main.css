@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width:100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-color: #005FCB;
+    background-image: url("/scribbles/weather-app/images/backgroundpattern.svg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.weather {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, .27);
+    padding: 20px 30px;
+    width: 480px;
+   
+    background-color: #59B0F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.weather-location {
+    text-align: center;
+    margin-bottom:1em;
+
+}
+
+.weather-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.weather-info-low,
+.weather-info-high {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+.weather-info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.weather-info-temp {
+    font-size: 5em;
+
+}
+
+.weather-sun {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.weather-sun-rise,
+.weather-sun-set {
+    text-align: center;
+}
+
+.weather-sun-rise-icon,
+.weather-sun-set-icon {
+
+    padding-top: 12px;
+
+}
+
+
+@media only screen and (max-width:640px){
+    
+    
+    
+    .weather {
+        width:95%;
+        padding:1em 1em;
+        min-width:450;
+        
+    }
+
+    .weather-info-icon svg {
+       width:75%;
+       
+    }
+
+
+
+}
+
+@media only screen and (max-width:425px){
+
+    .weatherinfo-icon {
+        text-align:center;
+    }
+
+
+}

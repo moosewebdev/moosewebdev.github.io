@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <section class="background">
+        <section class="weather">
+            <div class="wrapper">
+                <h1 class="weather-location"></h1>
+                <div class="weather-info">
+                    <div class="weatherinfo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="downArrow" class="cls-1" d="M10.5,0,21,18H0Z"
+                                transform="translate(21 18) rotate(180)" />
+                        </svg>
+                        <span class="weather-info-low"></span>
+                    </div>
+                    <div class="weather-info-container">
+                        <div class="weather-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="212" height="163" viewBox="0 0 212 163">
+                                <defs>
+                                    <style>
+                                        .cls-3 {
+                                            fill: #ffff3a;
+                                        }
+
+                                        .cls-4 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="scattered_Clouds" data-name="scattered Clouds"
+                                    transform="translate(-770 -420.515)">
+                                    <ellipse id="Ellipse_6" data-name="Ellipse 6" class="cls-3" cx="61" cy="61.5"
+                                        rx="61" ry="61.5" transform="translate(860 420.515)" />
+                                    <g id="Group_4" data-name="Group 4" transform="translate(770 465.424)">
+                                        <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-4" cx="41" cy="41"
+                                            r="41" transform="translate(0 36.09)" />
+                                        <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-4" cx="40.5" cy="40.5"
+                                            r="40.5" transform="translate(31 0.09)" />
+                                        <ellipse id="Ellipse_3" data-name="Ellipse 3" class="cls-4" cx="40.5" cy="41"
+                                            rx="40.5" ry="41" transform="translate(52 36.09)" />
+                                        <ellipse id="Ellipse_4" data-name="Ellipse 4" class="cls-4" cx="41" cy="40.5"
+                                            rx="41" ry="40.5" transform="translate(72 0.09)" />
+                                        <circle id="Ellipse_5" data-name="Ellipse 5" class="cls-4" cx="40.5" cy="40.5"
+                                            r="40.5" transform="translate(110 34.09)" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h1 class="weather-info-temp"></h1>
+                        <p class="weather-info-text"></p>
+                    </div>
+                    <div class="weatherinfo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+                            viewBox="0 0 21 18">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M10.5,0,21,18H0Z" />
+                        </svg>
+                        <span class="weather-info-high"></span>
+                    </div>
+                </div>
+                <div class="weather-sun">
+                    <div class="weather-sun-rise">
+                        <span class="weather-sun-rise-text"></span>
+                        <div class="weather-sun-rise-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="24" viewBox="0 0 86 24">
+                                <g id="Sunrise" transform="translate(-110 -442)">
+                                    <g id="Group_5" data-name="Group 5" transform="translate(-25 -91.86)">
+                                        <path id="Subtraction_1" data-name="Subtraction 1"
+                                            d="M30,15H0c0-.033,0-.065,0-.1v-.025A14.721,14.721,0,0,1,4.393,4.358a15.086,15.086,0,0,1,21.213,0A14.721,14.721,0,0,1,30,14.879c0,.04,0,.08,0,.121Z"
+                                            transform="translate(149 533.86)" fill="#ffff3a" />
+                                        <rect id="Rectangle_5" data-name="Rectangle 5" width="44" height="2" rx="1"
+                                            transform="translate(142 547.86)" fill="#fff" />
+                                        <rect id="Rectangle_6" data-name="Rectangle 6" width="44" height="2" rx="1"
+                                            transform="translate(135 551.86)" fill="#fff" />
+                                        <rect id="Rectangle_7" data-name="Rectangle 7" width="41" height="2" rx="1"
+                                            transform="translate(149 555.86)" fill="#fff" />
+                                    </g>
+                                    <path id="Polygon_2" data-name="Polygon 2" d="M10.5,0,21,18H0Z"
+                                        transform="translate(175 445)" fill="#fff" />
+                                </g>
+                            </svg></div>
+                    </div>
+                    <div class="weather-sun-set">
+                        <span class="weather-sun-set-text"></span>
+                        <div class="weather-sun-set-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="24" viewBox="0 0 86 24">
+                                <g id="Sunset" transform="translate(-79 -442)">
+                                    <g id="Group_5" data-name="Group 5" transform="translate(-25 -91.86)">
+                                        <path id="Subtraction_1" data-name="Subtraction 1"
+                                            d="M30,15H0c0-.033,0-.065,0-.1v-.025A14.721,14.721,0,0,1,4.393,4.358a15.086,15.086,0,0,1,21.213,0A14.721,14.721,0,0,1,30,14.879c0,.04,0,.08,0,.121Z"
+                                            transform="translate(149 533.86)" fill="#ffff3a" />
+                                        <rect id="Rectangle_5" data-name="Rectangle 5" width="44" height="2" rx="1"
+                                            transform="translate(142 547.86)" fill="#fff" />
+                                        <rect id="Rectangle_6" data-name="Rectangle 6" width="44" height="2" rx="1"
+                                            transform="translate(135 551.86)" fill="#fff" />
+                                        <rect id="Rectangle_7" data-name="Rectangle 7" width="41" height="2" rx="1"
+                                            transform="translate(149 555.86)" fill="#fff" />
+                                    </g>
+                                    <path id="Polygon_2" data-name="Polygon 2" d="M10.5,0,21,18H0Z"
+                                        transform="translate(100 463) rotate(180)" fill="#fff" />
+                                </g>
+                            </svg></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
