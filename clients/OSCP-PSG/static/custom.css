@@ -1,0 +1,24 @@
+/* add custom CSS here */
+
+header.novo-header {
+    background-color:#5198DE !important;
+}
+
+item-header-end {
+    margin-top:1.5em;
+}
+
+novo-list-item {
+    padding: 15px 15px 5px 15px !important;
+}
+
+
+.jdBack {
+    background: #000!important;
+    color:#fff !important;
+    font-weight:bold;
+    margin-left:3px !important;
+    padding:5px 15px 5px 10px !important;
+
+}
+
