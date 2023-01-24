@@ -38,7 +38,7 @@ header {
 
 .show {
 
-    background-color: #133336;
+    background-color: #212E3E;
     -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
             box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
     -webkit-transition: background-color, .5s ease-in-out, -webkit-box-shadow;
@@ -161,8 +161,8 @@ label {
 
 .upper-fold {
     position: relative;
-    background-color: #133336;
-    background-image: url("/images/Rectangle\ 16.svg");
+    background-color:#141D2B;
+    background-image: url("/images/heroBG.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -355,7 +355,7 @@ label {
 }
 
 h1 {
-    font-size: 1.7em;
+    font-size: 12rem;
     color: #fff;
     font-weight: 600;
 
@@ -498,10 +498,19 @@ p {
     font-size: 5em;
     opacity: .1;
 }
+.big-title-light {
+  color:#DBE2F0;
+  font-size: 5em;
+  opacity: .12;
+}
 
 #about,
 #work {
     padding-top: 2em;
+}
+
+#work, #scribbles{
+  background-color:#141D2B;
 }
 
 .small-title {
@@ -509,6 +518,13 @@ p {
     top: -40px;
     border-bottom: 5px solid #0ACAD6;
     display: inline;
+}
+.small-title-light {
+  color:#DBE2F0;
+  position: relative;
+  top: -40px;
+  border-bottom: 5px solid #0ACAD6;
+  display: inline;
 }
 
 .piece {
@@ -579,14 +595,15 @@ p {
 }
 
 .piece h3 {
-    font-size: 2em;
-    color: black;
+    font-size: 2.5rem;
+    color: #DBE2F0;
     margin-bottom: 0;
+    font-weight: 700;
 }
 
 .piece p {
     font-size: 1.2em;
-    color: black;
+    color: #DBE2F0;
     margin-bottom: 0;
 }
 
@@ -606,8 +623,8 @@ p {
     z-index: -1;
 }
 #scribbles {
-    margin-top: 2em ;
-    margin-bottom: 5em ;
+    /* margin-top: 2em ;
+    margin-bottom: 5em ; */
     text-align: center;
    
 }
@@ -679,7 +696,7 @@ p {
 
 .footer {
     text-align: center;
-    background-color: #133336;
+    background-color: #141D2B;
     padding: 25px 10px 10px 10px;
 
 
@@ -693,6 +710,7 @@ p {
 .social-media {
 
     margin-top: 10px;
+    
     text-align: center;
 
 }
@@ -716,7 +734,7 @@ p {
 .copyright span {
     font-size: .75em;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 20px;
 
 
 }
@@ -907,7 +925,7 @@ section {
 
 @media only screen and (min-width:640px) {
     .upper-fold {
-        background-image: url("/images/topangle-bg.svg");
+        background-image: url("/images/heroBG.svg");
 
     }
 
@@ -1089,7 +1107,7 @@ section {
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 4rem;
     }
 
     .pleft {
