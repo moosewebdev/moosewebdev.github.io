@@ -48,6 +48,14 @@ header {
 
 
 }
+.pContainer {
+  max-width:764px;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  color:#DBE2F0;
+
+}
+
 
 .container {
     width: 90%;
@@ -391,10 +399,10 @@ em span {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.6em;
     color: #133336;
-    opacity: .85;
+    /* opacity: .85; */
     font-weight: 300;
 
 }
@@ -744,44 +752,22 @@ p {
 .project-header {
     width: 100%;
     position: relative;
-    background-image: url("/images/Mask\ Group\ 1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 55%;
-    min-height: 450px;
     
-}
+    background: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.1)), url("/images/RAuth-pageHero.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:60vh;
 
-#curve {
-    position: absolute;
-    bottom: 0;
-
-}
-
-#project-title {
-    position: absolute;
-    bottom: 20%;
-}
-
-#project-title span {
-    color: #0ACAD6;
-}
-
-
-.pRole em {
-    margin: 0;
-    opacity: 1;
-    padding: 5px 0px 5px 0px;
-    border-bottom: 5px solid #0ACAD6;
-    font-weight: 400;
-
+    min-height: 450px;
+    max-height: 762px;;
 }
 
 section {
     padding: 2em 0;
 }
 
-.pAbout,
+/* .pAbout,
 .journey,
 .Final {
     padding: 3em 0 3em 0;
@@ -798,7 +784,7 @@ section {
 .Final p {
     color: #133336;
     margin-top: 2em;
-}
+} */
 
 .psectionT {
 
@@ -806,6 +792,39 @@ section {
     display: inline;
 
 }
+.secImage {
+  margin:2rem 0;
+  
+}
+.medImgContainer {
+  max-width:990px;
+  margin: 0 auto;
+  
+
+}
+
+
+
+
+.medImgContainer img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, .35);
+  width: 100%;
+  
+  /* object-fit: cover; */
+  object-position: bottom;
+}
+
+.lrgImgContainer {
+  width:100%;
+  margin: 0 auto;
+
+}
+.lrgImgContainer img {
+  width:100%;
+  
+}
+
 
 .lightb {
     width: 100%;
@@ -813,42 +832,6 @@ section {
 
 }
 
-.journey {
-    background-color: #098791;
-    color: #fff;
-    text-align: center;
-}
-
-.journey p {
-    color: #fff;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.row .pright {
-    text-align: right;
-}
-
-.journey p,
-.Final p,
-.row {
-    margin-bottom: 2em;
-}
-
-.dash .pleft {
-    width: 60%
-}
-
-.dash .pright {
-    width: 40%;
-}
-
-.dash .psectionT {
-    border: none;
-    font-size: 1.5em;
-}
 
 
 /****************** Project page betterU homepage*******************************************/
@@ -868,8 +851,74 @@ section {
     width: 100%;
     clear: both;
 }
+.pAbout{
+  background-color:#141D2B;
+}
+.pAbout p, ol {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+  
+}
+.pAbout ol {
+  margin-left:3rem;
+  margin-right:3rem;
+  padding-left:2rem;
+}
+.pAbout ol li{
+  font-weight:300;
+  color:#DBE2F0;
+  padding-left:1.2rem;
+  padding-bottom:.1rem;
+  
+}
+ol .innerList{
+  margin-left:0px;
+  
+}
 
-.pAbout ul {
+.protoLinks {
+list-style: none;
+
+}
+.protoLinks li {
+  padding-bottom: 1rem;
+  
+  }
+.protoLinks a{
+  font-size: 1.3rem;
+  color:#0ACAD6;
+  
+}
+
+.pAbout h3 {
+  font-size:2rem;
+  font-weight: 700;
+  line-height: 2.65rem;
+  margin-top:2.1rem;
+}
+.padding-sections{
+  padding-bottom:2.5rem
+}
+.text-light{
+  
+  color:rgba(219,226,240,.9);
+  
+}
+
+.proTitle {
+  font-size: 3.5rem;
+  margin-bottom:1.5rem;
+}
+
+p.proInfo {
+  margin-bottom: 0px;
+}
+.secImage figcaption {
+  padding-top:.5rem;
+  text-align: center;
+}
+/* .pAbout ul {
     list-style: none;
     padding: 2em 0 2em 0;
     margin: 0;
@@ -897,29 +946,67 @@ section {
 .pAbout li h4 {
     font-size: 1.2em;
     margin-bottom: .5em
-}
+} */
 
 
 @media only screen and (max-width:640px) {
-
+  .project-header{
+    height:50px;
+  }  
+  .pContainer{
+      padding: 0px 1rem 0px 1rem;
+    }
+    #intro h1 {
+      font-size:2.5rem;
+    }
     .triangle {
         display: none;
 
     }
-
+    .wTitle {
+      margin:0px;
+      padding-top:1rem
+    }
+    .wTitle h3 {
+      font-size:1.2rem;
+    }
     .upper-fold::before {
         right: -5em;
         top: 8em;
         width: 15em;
         height: 15em;
     }
-
-
+    .wTitle p {
+      margin-top:.2rem;
+      font-size:1rem;
+    }
+    h2.proTitle {
+      font-size:2rem;
+    }
 
     .piece {
         margin-bottom: 2em;
     }
 
+    .pAbout p, ol{
+      font-size:1.4rem;
+      line-height: 155%;
+    }
+
+    .pAbout ol {
+      margin-left:0px;
+      margin-right:0px;
+      padding-left:1.1rem;
+      
+    }
+    .medImgContainer img {
+      border-radius: 0px;
+      box-shadow:none;
+      width: 100%;
+      
+      /* object-fit: cover; */
+      object-position: bottom;
+    }
 
 }
 
@@ -1023,7 +1110,7 @@ section {
         margin-right: 0;
     }
 
-    .pAbout ul {
+    /* .pAbout ul {
         list-style: none;
         padding: 2em 0 2em 0;
         margin: 0;
@@ -1036,9 +1123,9 @@ section {
 
 
 
-    }
+    } */
 
-    .pAbout li {
+    /* .pAbout li {
         padding: 0 2em 0 2em;
         
         margin-bottom: 2em;
@@ -1046,7 +1133,7 @@ section {
         display: block;
 
 
-    }
+    } */
 
 }
 
@@ -1120,14 +1207,14 @@ section {
         width: 60%;
     }
 
-    .pAbout ul {
-        list-style: none;
+     .pAbout ul {
+       /* list-style: none;
         padding: 2em 0 2em 0;
         margin: 0;
         font-size: 1em;
         color: #133336;
         -webkit-columns: 1;
-                columns: 1;
+                columns: 1; */
 
 
 
@@ -1136,10 +1223,10 @@ section {
     }
 
     .pAbout li {
-        padding: 0 2em 0 2em;
-        margin-bottom: 2em;
-        width: 25%;
-        display: inline-block;
+        /* padding: 0 2em 0 2em; */
+        /* margin-bottom: 2em; */
+        /* width: 25%; */
+        /* display: inline-block; */
 
     }
 

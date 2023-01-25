@@ -57,65 +57,189 @@
 </header>
 
    
-        <div class="project-header">
-                        <svg id="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.001 98.858">
-                                <path id="curve" d="M-4198,619H-5564V520.144c43.145,14.466,90.858,27.614,141.816,39.078,51.421,11.568,106.542,21.51,163.832,29.55,58.353,8.189,119.5,14.481,181.758,18.7C-5012.69,611.8-4946.883,614-4881,614s131.69-2.2,195.595-6.527c62.253-4.219,123.405-10.511,181.758-18.7,57.289-8.04,112.41-17.982,163.832-29.55,50.954-11.464,98.668-24.611,141.816-39.078V619Z" transform="translate(5564 -520.144)" fill="#fff"/>
-                        </svg>
-            <div class="container">
-              <div id="project-title">
-                <h1>betterU <span>on Android</span></h1>
-                <p class="pRole"><em >Project Role: UX/UI Designer</em></p>
-              </div>
+        <div class="project-header"></div>
+        <section class="pAbout text-light">
+          <div class="pContainer clear">
+            <h2 class="proTitle">ArmorLock Remote Access</h2>
+            <p class="text-light proInfo"><Strong>Company: </Strong>Wester Digital</p>
+            <p class="text-light padding-sections"><Strong>Role: </Strong>Lead UX/UI Designer, Research, User Testing  </p>
+            <div class="tcontainer">
+              <h2 class="big-title-light">Overview</h2>
+              <h2 class="small-title-light" tabindex="11">Overview</h2>
             </div>
-        </div>
-        <section class="pAbout">
-          <div class="container clear">
-            <div class="pleft">
-                <h2 class="psectionT">About the Project</h2>
-                <p>betterU is an online learning platform for the country of India, with courses across multiple disciplines, assessments and learning paths. </p>
-
-                    <p>The majority of India's population use Android devices. There for it was important for betterU's existing platform to be replicated in a hybrid app on Android OS. </p>
-            </div>
-            <div class="pright">
-                
-                <a class="lightb" href="/images/betterUApp-homepage.png" ><img src="/images/betterUApp-homepage.png" title="betterU app Homepage"></a>
-            </div>
+            <p class="text-light">The G-DRIVE ArmorLock SSD and app deliver next-generation security and new-generation simplicity combined with powerful, pro-grade performance to help protect users most critical content. Encryption is only the beginning.</p>
+            <p class="text-light">The target market is the MNE (Movie and Entertainment) business. Entertainment studios across the world need a secure solution for storing huge amounts of high-quality footage, audio, and more. In conjunction with its associated software, the ArmorLock SSD enables users to securely store content on a drive and then control access it.</p>
+           
          
         </div>
         </section>
-        <section class="journey">
-            <div class="container clear">
-                <h2 class="psectionT">Purchasing Journey</h2>
-                <p>To avoid using Google's purchasing interface we developed an integrated webview linking to our checkout page.</p> 
-             
-                <a class="lightb" href="/images/Journey.png" ><img src="/images/Journey.png" title="betterU app Homepage"></a>
-             
-           
-          </div>
-          </section>
-        <section class="Final clear">
-            <div class="container clear">
-              <div class="row clear">
-                <div class="pleft">
-                  
-                      <h2 class="psectionT">Final Design</h2>
-                      
-                      <p>The final design included a user dashboard with access to the assessment tool. The minimum viable product was released with many more iterations to come. </p> 
-                      <div class="dlapp">
-                        <h4>Take it for a spin...</h4>
-                        <a href="https://play.google.com/store/apps/details?id=in.betteru.android.app&hl=en_CA" target="_blank" title="betterU App download" alt="betterU App download"><img src="/images/googleplayBadge.png" width="155" height="60"></a>
-                      </div>
-              </div>
-              <div class="pright">
-                  <a class="lightb" href="/images/finalDesign.gif" ><img class="fimg" src="/images/finalDesign.gif" title="betterU app Homepage" ></a>
-              </div>
+        <section class="pAbout text-light">
+          <div class="pContainer clear">
+            <div class="tcontainer">
+              <h2 class="big-title-light">Problem</h2>
+              <h2 class="small-title-light" tabindex="11">Problem</h2>
             </div>
-             
-        
+            <p class="text-light">ArmorLock doesn't use cloud infrastructure to facilitate access requests. Managers must be within Bluetooth range of a drive to edit its list of authorized users.</p>
+            <p class="text-light">Users that want access to a drive must first install ArmorLock on the Android, iOS, or MacOS device they want to use. After they've set up the app, they send their User ID to the manager. The manager adds their User ID to a list authorized users, and then sends them the drive.</p>
+           </div>
+           <div class="secImage">
+            <div class="medImgContainer">
+              <a class="lightb" href="/images/RAuth-AL-description.jpg" ><img src="/images/RAuth-AL-description.jpg" title="Armorlock problem"></a>
               
+              
+            </div>
+           </div>
+           <div class="pContainer clear">
+            <ol>
+              <li>Manager(location A) syncs drive with ArmorLock app.</li>
+              <li>Users(location B) install ArmorLock App and send User ID </li>
+              <li>Manager receives User IDs and adds Users to the drives Authorized User list</li>
+              <li>Drive is then shipped to location</li>
+              
+            </ol>
+            <p class="text-light">In theory, the system works great. Managers have complete control over who accesses their drives, and users have an easy way to lock and unlock the drive when it's in their possession. However, there are scenarios where ArmorLock runs into issues. For example, what if the drive has already been delivered to a location with three users authorized, but a fourth user is suddenly added to the team and now requires access? If none of the first three were granted manager privileges, they'd have to send the drive back to add the new user. This will definitely result in delay and frustration.</p>
+            <p class="text-light">The obvious fix for these issues would be to enable remote requests. However, we didn't have any plans for adding cloud support to the app. So, the question became:</p>
+            <h3 class="text-light">How do we allow remote authorization of a user without cloud support? </h3>
+           </div>
+           <div class="secImage">
+            <div class="medImgContainer">
+              <a class="lightb" href="/images/RAuth-AL-description2.jpg" ><img src="/images/RAuth-AL-description2.jpg" title="Armorlock problem"></a>
+              
+            </div>
+           </div>
+        </section>
+
+        <section class="pAbout text-light">
+          <div class="pContainer clear">
+            <div class="tcontainer">
+              <h2 class="big-title-light">Research</h2>
+              <h2 class="small-title-light" tabindex="11">Research</h2>
+            </div>
+            <p class="text-light">We needed to make a new feature in the app to enable remote authorization. I didn't know what it should look like or how it should function, so I began to research.</p>
+            <p class="text-light">To develop a remote access request feature, we needed to understand what our users wanted from it. We started by interviewing some of our MNE users to see what they thought. We wanted to learn what these users needed in order to feel confident that using a remote request feature wouldn't introduce security concerns.</p>
+            <p class="text-light">We found that users who managed drives wanted this feature to do some interesting things, such as:</p>
+            <ol>
+              <li>Allow a requesting user to add a comment to the manager.</li>
+              <li>Present the geolocation of the requesting user.  </li>
+              <li>Enable the manager to take more actions on the request:
+                <ol class="innerList" type="a">
+                  <li>Approve as Manager </li>
+                  <li>Approve as User </li>
+                  <li>Deny</li>
+                  <li>Remote Erase</li>
+                </ol>
+              </li> 
+            </ol>
+           </div>
+           <div class="secImage">
+            <div class="medImgContainer">
+              <a class="lightb" href="/images/RAuth-AL-sharingfile.jpg" ><img src="/images/RAuth-AL-sharingfile.jpg" title="Armorlock problem"></a>
+              <figcaption>Simple flow showing the sharing of the request/response files back and forth.</figcaption>
+            </div>
+           </div>
            
-          </div>
-          </section>
+        </section>
+
+        <section class="pAbout text-light">
+          <div class="pContainer clear">
+            <div class="tcontainer">
+              <h2 class="big-title-light">Journey Map</h2>
+              <h2 class="small-title-light" tabindex="11">Journey Map</h2>
+            </div>
+            <p class="text-light">Now that we knew what our users wanted, we met with our engineers to brainstorm. We needed a way to send critical, secure information back and forth between users and managers remotely.brainstorm ideas on how to send this information along with security information back and forth between the requesting User and Manager. </p>
+            <p class="text-light">We tried a few ideas, such as QR codes, and ultimately we settled on using email. This is similar to how users send their User IDs to managers when requesting access normally. The engineers developed a way for ArmorLock to create request and response files and automatically compose an email with them attached. This method facilitates sending all the information our MNE users said they wanted to see.</p>
+            <p class="text-light">At this point, the Journey Map consisted of three primary journeys:</p>
+            <ol>
+              <li>User Request Access.</li>
+              <li>Manager Approves Request.  </li>
+              <li>User Accepts Access</li> 
+            </ol>
+           </div>
+           <div class="secImage padding-sections">
+            <div class="medImgContainer">
+              <a class="lightb" href="/images/RAuth-AL-Journeymap1.jpg" ><img src="/images/RAuth-AL-Journeymap1.jpg" title="Armorlock problem"></a>
+              <figcaption>User Requests Access.</figcaption>
+            </div>
+           </div>
+
+           <div class="secImage padding-sections">
+            <div class="medImgContainer">
+              <a class="lightb" href="/images/RAuth-AL-Journeymap2.jpg" ><img src="/images/RAuth-AL-Journeymap2.jpg" title="Armorlock problem"></a>
+              <figcaption>Manager Approves Request.</figcaption>
+            </div>
+           </div>
+
+           <div class="secImage">
+            <div class="medImgContainer">
+              <a class="lightb" href="/images/RAuth-AL-Journeymap3.jpg" ><img src="/images/RAuth-AL-Journeymap3.jpg" title="Armorlock problem"></a>
+              <figcaption>User Accepts Access.</figcaption>
+            </div>
+           </div>
+           
+        </section>
+
+        <section class="pAbout text-light">
+          <div class="pContainer clear">
+            <div class="tcontainer">
+              <h2 class="big-title-light">User Testing</h2>
+              <h2 class="small-title-light" tabindex="11">User Testing</h2>
+            </div>
+            <p class="text-light">We built our prototypes and tested them among or target demographic using Usertesting.com. With our internal design system we were able to prototype rapidly once we had the initial journey map solved.</p>
+            <p class="text-light">User testing is where we learned just how the advances in technology have formed a user expectation around automation within applications. The users responded well to the flows up until the user needed to email the generated file themselves. When asked if they had sent the file 90% of users responded “yes” even though they had not sent it. When further asked why they felt they had sent the file they responded “because technology does it for you”. Only 10% of users actually went through the process of sending the email with the attachment file.</p>
+            <p class="text-light">Thanks to modern advancements in file sharing and cloud support, users don't expect to have to send requests manually. However, cloud support was off the table, so automation was impossible. Ultimately, we found a solution that worked by creating a list of steps that we presented to the user at just the right time. This led to a huge increase in the number of requests sent successfully in testing.</p>
+            <ul class="protoLinks">
+              <li><a href="https://www.figma.com/proto/jSz0TvdL3zkafdn6j8gNa7/iOS-1.8-Always-Unlocked-aka-Open-Access?page-id=2%3A9&node-id=4%3A28178&viewport=1253%2C1683%2C0.25&scaling=scale-down&starting-point-node-id=4%3A28178&show-proto-sidebar=1" target="_blank">iOS Prototypes</a></li>
+              <li><a href="#">macOS Prototypes</a></li>
+            </ul>
+            
+            
+           </div> 
+        </section>
+
+        <section class="pAbout text-light">
+          <div class="pContainer clear">
+            <div class="tcontainer">
+              <h2 class="big-title-light">Final Flows</h2>
+              <h2 class="small-title-light" tabindex="11">Final Flows</h2>
+            </div>
+           
+              <p class="text-light">Now that we had the data to understand our users needs, it was time to design. I used Figma to develop the following flows, and worked cross-functionally with others to develop the following flows:</p>
+            </div>
+            <div class="secImage padding-sections">
+                <div class="lrgImgContainer">
+                  <a class="lightb" href="/images/RAuth-AL-final-flows1.jpg" ><img src="/images/RAuth-AL-final-flows1.jpg" title="Armorlock problem"></a>
+                <figcaption>User Remote Access request.</figcaption>
+             </div>
+             </div>
+  
+             <div class="secImage padding-sections">
+              <div class="lrgImgContainer">
+                <a class="lightb" href="/images/RAuth-AL-final-flows2.jpg" ><img src="/images/RAuth-AL-final-flows2.jpg" title="Armorlock problem"></a>
+                <figcaption>Manager responding to remote access request.</figcaption>
+              </div>
+             </div>
+  
+             <div class="secImage">
+              <div class="lrgImgContainer">
+                <a  href="/images/RAuth-AL-final-flows3.jpg" ><img src="/images/RAuth-AL-final-flows3.jpg" title="Armorlock problem"></a>
+                <figcaption>User opens response.</figcaption>
+              </div>
+             </div>
+            
+            
+           
+        </section>
+
+        <section class="pAbout text-light">
+          <div class="pContainer clear">
+            <div class="tcontainer">
+              <h2 class="big-title-light sml">Summary</h2>
+              <h2 class="small-title-light" tabindex="11">Summary</h2>
+            </div>
+              <p class="text-light">In Summary, we developed a remote access request feature within the limitations we were presented with. We carefully researched our users' needs and then crafted a curated experience to satisfy them. If cloud support is ever on the table for ArmorLock, this will no doubt be deprecated, but in the interim it works beautifully.</p>
+            </div> 
+        </section>
+        
         
         <div class="footer">
             <div class="container">
