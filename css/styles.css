@@ -440,6 +440,37 @@ p {
     border-bottom: 5px solid #0ACAD6;
     display: inline;
 }
+.button-box {
+
+  margin-top:2.5rem;
+
+}
+.button-normal {
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  /* line-height: 165%; */
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 2rem;
+  border: none;
+  background:#0ACAD6;
+  color: #212E3E;
+  text-decoration: none;
+  box-shadow: rgba(20, 29, 43, 0.3) 0px 5px 10px
+  0px;
+  transition: background-color 0.5s ease;
+
+}
+
+a.button-normal {
+  border:none;
+}
+a.button-normal:hover{
+  background:#81D9DE;
+}
 
 .typing {
     position: absolute;
@@ -487,6 +518,10 @@ p {
     margin-bottom: 20px;
 }
 
+.tools img {
+  margin-right:1.5rem;
+  
+}
 .tool {
     display: inline;
 }
