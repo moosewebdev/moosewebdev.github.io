@@ -60,7 +60,7 @@
         <div class="project-header"></div>
         <section class="pAbout text-light">
           <div class="pContainer clear">
-            <h2 class="proTitle">ArmorLock Remote Authorization</h2>
+            <h2 class="proTitle">ArmorLock Always Unlocked</h2>
             <p class="text-light proInfo"><Strong>Company: </Strong>Wester Digital</p>
             <p class="text-light padding-sections"><Strong>Role: </Strong>Lead UX/UI Designer, Research, User Testing  </p>
             <div class="tcontainer">
@@ -79,35 +79,10 @@
               <h2 class="big-title-light">Problem</h2>
               <h2 class="small-title-light" tabindex="11">Problem</h2>
             </div>
-            <p class="text-light">ArmorLock doesn't use cloud infrastructure to facilitate access requests. Managers must be within Bluetooth range of a drive to edit its list of authorized users.</p>
-            <p class="text-light">Users that want access to a drive must first install ArmorLock on the Android, iOS, or MacOS device they want to use. After they've set up the app, they send their User ID to the manager. The manager adds their User ID to a list authorized users, and then sends them the drive.</p>
+            <p class="text-light">The original problem that the ArmorLock platform solved was the secure storage of large amounts of data within the MNE business. ArmorLock is looking to expand its target audience to a broader consumer if the consumer chooses to enable security.  ArmorLock SSDs are shipped with security and Encryption on and have no ability in the current firmware to disable this.</p>
+            <p class="text-light">How do we expand our user base without hindering the plug and play ability of our mass market drives, while still giving the user the option to enable security on ArmorLock enabled drives?</p>
            </div>
-           <div class="secImage">
-            <div class="medImgContainer">
-              <a class="lightb" href="/images/RAuth-AL-description.jpg" ><img src="/images/RAuth-AL-description.jpg" title="Armorlock problem"></a>
-              
-              
-            </div>
-           </div>
-           <div class="pContainer clear">
-            <ol>
-              <li class="li-update">Manager(location A) syncs drive with ArmorLock app.</li>
-              <li class="li-update">Users(location B) install ArmorLock App and send User ID </li>
-              <li class="li-update">Manager receives User IDs and adds Users to the drives Authorized User list</li>
-              <li class="li-update">Drive is then shipped to location</li>
-              
-            </ol>
-            <p class="text-light">In theory, the system works great. Managers have complete control over who accesses their drives, and users have an easy way to lock and unlock the drive when it's in their possession. However, there are scenarios where ArmorLock runs into issues. For example, what if the drive has already been delivered to a location with three users authorized, but a fourth user is suddenly added to the team and now requires access? If none of the first three were granted manager privileges, they'd have to send the drive back to add the new user. This will definitely result in delay and frustration.</p>
-            <p class="text-light">The obvious fix for these issues would be to enable remote requests. However, we didn't have any plans for adding cloud support to the app. So, the question became:</p>
-            <h3 class="text-light">How do we allow remote authorization of a user without cloud support? </h3>
-           </div>
-           <div class="secImage">
-            <div class="medImgContainer">
-              <a class="lightb" href="/images/RAuth-AL-description2.jpg" ><img src="/images/RAuth-AL-description2.jpg" title="Armorlock problem"></a>
-              
-            </div>
-           </div>
-        </section>
+           </section>
 
         <section class="pAbout text-light">
           <div class="pContainer clear">
@@ -115,30 +90,21 @@
               <h2 class="big-title-light">Research</h2>
               <h2 class="small-title-light" tabindex="11">Research</h2>
             </div>
-            <p class="text-light">We needed to make a new feature in the app to enable remote authorization. I didn't know what it should look like or how it should function, so I began to research.</p>
-            <p class="text-light">To develop a remote access request feature, we needed to understand what our users wanted from it. We started by interviewing some of our MNE users to see what they thought. We wanted to learn what these users needed in order to feel confident that using a remote request feature wouldn't introduce security concerns.</p>
-            <p class="text-light">We found that users who managed drives wanted this feature to do some interesting things, such as:</p>
+            <p class="text-light">The current ArmorLock SSD is shipped with security and encryption enabled and cannot be disabled. This creates an issue when ArmorLock security and encryption is integrated into new product lines it would hinder the plug and play experience many users are already familiar with when comes to  Western Digital HDD & SDD products.  It creates another hurdle users would need to go through in order to use the drive in the expected manner without security or encryption.</p>
+            
+            <p class="text-light">For new product lines we need to ship drives in the unlocked state(security and encryption disabled) in order to preserve the expected plug and play experience. If users chose that they needed added security they could then decide to use ArmorLock to do so. While the original ArmorLock drives will still ship in the locked state.</p>
+
+            <p class="text-light">We conducted surveys with our consumer users to identify the appropriate name for the feature. We also interviewed out MNE industry partners who said they had no use of this feature. Their response was expected, as they would probably never use this feature. This feature was being added to expand our user base to users outside the MNE industry. </p>
+
+            <p class="text-light">In order to to implement this feature we needed to accomplish:</p>
             <ol>
-              <li>Allow a requesting user to add a comment to the manager.</li>
-              <li>Present the geolocation of the requesting user.  </li>
-              <li>Enable the manager to take more actions on the request:
-                <ol class="innerList" type="a">
-                  <li>Approve as Manager </li>
-                  <li>Approve as User </li>
-                  <li>Deny</li>
-                  <li>Remote Erase</li>
-                </ol>
-              </li> 
+              <li>The ability to turn on and off Security and encryption.</li>
+              <li>Preserve the familiar plug and play experience out of the box for new consumers, while giving users the ability to use security and encryption if they choose.</li>
+              <li>Continue to support older ArmorLock drives with security & encryption enabled from the factory.</li>
+              <li>Naming the feature appropriately.</li> 
             </ol>
            </div>
-           <div class="secImage">
-            <div class="medImgContainer">
-              <a class="lightb" href="/images/RAuth-AL-sharingfile.jpg" ><img src="/images/RAuth-AL-sharingfile.jpg" title="Armorlock problem"></a>
-              <figcaption>Simple flow showing the sharing of the request/response files back and forth.</figcaption>
-            </div>
-           </div>
-           
-        </section>
+          </section>
 
         <section class="pAbout text-light">
           <div class="pContainer clear">
@@ -146,37 +112,28 @@
               <h2 class="big-title-light">Journey Map</h2>
               <h2 class="small-title-light" tabindex="11">Journey Map</h2>
             </div>
-            <p class="text-light">Now that we knew what our users wanted, we met with our engineers to brainstorm. We needed a way to send critical, secure information back and forth between users and managers remotely. </p>
-            <p class="text-light">We tried a few ideas, such as QR codes, and ultimately we settled on using email. This is similar to how users send their User IDs to managers when requesting access normally. The engineers developed a way for ArmorLock to create request and response files and automatically compose an email with them attached. This method facilitates sending all the information our MNE users said they wanted to see.</p>
-            <p class="text-light">At this point, the Journey Map consisted of three primary journeys:</p>
-            <ol>
-              <li>User Request Access.</li>
-              <li>Manager Approves Request.  </li>
-              <li>User Accepts Access</li> 
-            </ol>
-           </div>
-           <div class="secImage padding-sections">
-            <div class="medImgContainer">
-              <a class="lightb" href="/images/RAuth-AL-Journeymap1.jpg" ><img src="/images/RAuth-AL-Journeymap1.jpg" title="Armorlock problem"></a>
-              <figcaption>User Requests Access.</figcaption>
-            </div>
+            <p class="text-light">We needed to understand how ArmorLock(AL) technology works. The drives currently ship in a locked state. The default state of the drive is locked, every time the drive is plugged in, it will be locked. In order for the drive to be unlocked a user needs to have authorization to the drive. The initial setup of the drive is done using take ownership flow. This syncs the AL app with the drive and allows the user(Manager) to unlock/lock and authorize additional users/managers. </p>
+
+            <p class="text-light">How this new feature would work is that security and encryption is always on, but we can toggle the boot sequence to start in the unlocked state allowing users to always have the plug and play experience. While in the unlocked state users/managers can still use the AL app and features. The drive can be used without the need for AL app by anyone. This is because the drive will always boot into the unlocked state.</p>
+            <p class="text-light">Lets familiarize our self with the current high level user journey.</p>
            </div>
 
            <div class="secImage padding-sections">
             <div class="medImgContainer">
-              <a class="lightb" href="/images/RAuth-AL-Journeymap2.jpg" ><img src="/images/RAuth-AL-Journeymap2.jpg" title="Armorlock problem"></a>
-              <figcaption>Manager Approves Request.</figcaption>
+              <a class="lightb" href="/images/AU-onboarding-original.jpg" ><img src="/images/AU-onboarding-original.jpg" title="High level onboarding of original ArmorLock drive."></a>
+              <figcaption>High level onboarding of original ArmorLock drive.</figcaption>
             </div>
            </div>
-
-           <div class="secImage">
+           <div class="pContainer clear">
+           <p class="text-light">In order to preserve the plug and play experience of our new SSD products and incorporate the ability to use AL technology into these new drives. We would need to ship the drives in the unlocked state. We needed to add another entry point into our onboarding flow. As well as an exit point for users choosing to return the drive to the unlocked state.</p>
+            </div>
+           <div class="secImage padding-sections">
             <div class="medImgContainer">
-              <a class="lightb" href="/images/RAuth-AL-Journeymap3.jpg" ><img src="/images/RAuth-AL-Journeymap3.jpg" title="Armorlock problem"></a>
-              <figcaption>User Accepts Access.</figcaption>
+              <a class="lightb" href="/images/AU-onboarding-updated.jpg" ><img src="/images/AU-onboarding-updated.jpg" title="Updated high level onboarding of new ArmorLock drives."></a>
+              <figcaption>Updated high level onboarding of new ArmorLock drives.</figcaption>
             </div>
            </div>
-           
-        </section>
+          </section>
 
         <section class="pAbout text-light">
           <div class="pContainer clear">
@@ -184,21 +141,14 @@
               <h2 class="big-title-light">User Testing</h2>
               <h2 class="small-title-light" tabindex="11">User Testing</h2>
             </div>
-            <p class="text-light">We built our prototypes and tested them among or target demographic using Usertesting.com. With our internal design system we were able to prototype rapidly once we had the initial journey map solved.</p>
-            </div>
-            
-            <div class="secImage padding-sections">
-              <div class="medImgContainer slicer">
-                <iframe src='https://my.spline.design/iosmetricremoteauth-317e78d53669a6da7bbdc1e78ecfea2d/' frameborder='0' height="100%"></iframe>
-              </div>
-             </div>
-            
-            <div class="pContainer clear">
-            <p class="text-light">User testing is where we learned just how the advances in technology have formed a user expectation around automation within applications. The users responded well to the flows up until the user needed to email the generated file themselves. When asked if they had sent the file 90% of users responded “yes” even though they had not sent it. When further asked why they felt they had sent the file they responded “because technology does it for you”. Only 10% of users actually went through the process of sending the email with the attachment file.</p>
-            <p class="text-light">Thanks to modern advancements in file sharing and cloud support, users don't expect to have to send requests manually. However, cloud support was off the table, so automation was impossible. Ultimately, we found a solution that worked by creating a list of steps that we presented to the user at just the right time. This led to a huge increase in the number of requests sent successfully in testing.</p>
+            <p class="text-light">While the feature was a toggle in the drive settings panel we really wanted to make sure the naming of the feature and the user’s understanding of the feature was bang on.</p>
+
+            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh nec ipsum aliquet eleifend. Aliquam pretium dui vel rutrum maximus. Sed rhoncus, metus ac varius lobortis, lorem nisi feugiat lectus, quis dapibus massa est id lectus. Morbi blandit iaculis nisi. Nunc auctor vitae felis nec malesuada. Suspendisse ac tempor leo, et aliquam erat. Praesent sed nibh nec tortor congue consequat in hendrerit quam. </p>
+
+            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh nec ipsum aliquet eleifend. Aliquam pretium dui vel rutrum maximus. Sed rhoncus, metus ac varius lobortis, lorem nisi feugiat lectus, quis dapibus massa est id lectus. Morbi blandit iaculis nisi. Nunc auctor vitae felis nec malesuada. Suspendisse ac tempor leo, et aliquam erat. Praesent sed nibh nec tortor congue consequat in hendrerit quam. </p>
             <ul class="protoLinks">
-              <li><a href="https://www.figma.com/proto/sNlpiGcsaXrf1xBNHzjx4u/iOS-Test-04---Access-Request?page-id=2%3A24&node-id=303%3A22889&viewport=3974%2C2159%2C0.25&scaling=scale-down&starting-point-node-id=303%3A22889&show-proto-sidebar=1" target="_blank" alt="iOS Prototypes" title="iOS Prototypes">iOS Prototypes</a></li>
-              <li><a href="https://www.figma.com/proto/Gy6VaeH1A6sdiOEeEWTKgd/macOS-Test-05---Remote-Access-Request-(User%2BManager)?page-id=1%3A11&node-id=1%3A1767&viewport=1882%2C742%2C0.06&scaling=contain&starting-point-node-id=1%3A1767&show-proto-sidebar=1" target="_blank" alt="iOS Prototypes" title="iOS Prototypes">macOS Prototypes</a></li>
+              <li><a href="https://www.figma.com/proto/jSz0TvdL3zkafdn6j8gNa7/iOS-1.8-Always-Unlocked-aka-Open-Access?page-id=2%3A9&node-id=4%3A28178&viewport=1253%2C1683%2C0.25&scaling=scale-down&starting-point-node-id=4%3A28178&show-proto-sidebar=1" target="_blank">iOS Prototypes</a></li>
+              <li><a href="#">macOS Prototypes</a></li>
             </ul>
             
             
@@ -212,26 +162,26 @@
               <h2 class="small-title-light" tabindex="11">Final Flows</h2>
             </div>
            
-              <p class="text-light">Now that we had the data to understand our users needs, it was time to design. I used Figma to develop the following flows, and worked cross-functionally with others to develop the following flows:</p>
+              <p class="text-light">Now that we had the data to understand our users needs, it was time to design. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh nec ipsum aliquet eleifend. Aliquam pretium dui vel rutrum maximus. Sed rhoncus, metus ac varius lobortis, lorem nisi feugiat lectus, quis dapibus massa est id lectus. Morbi blandit iaculis nisi. Nunc auctor vitae felis nec malesuada. Suspendisse ac tempor leo, et aliquam erat. Praesent sed nibh nec tortor congue consequat in hendrerit quam.I used Figma to develop the following flows, and worked cross-functionally with others to develop the following flows:</p>
             </div>
             <div class="secImage padding-sections">
                 <div class="lrgImgContainer">
-                  <a class="lightb" href="/images/RAuth-AL-final-flows1.jpg" ><img src="/images/RAuth-AL-final-flows1.jpg" title="Armorlock problem"></a>
-                <figcaption>User Remote Access request.</figcaption>
+                  <a class="lightb" href="/images/AU-main-screens.jpg" ><img src="/images/AU-main-screens.jpg" title="Always Unlocked main screen updates."></a>
+                <figcaption>Always Unlocked main screen updates.</figcaption>
              </div>
              </div>
   
              <div class="secImage padding-sections">
               <div class="lrgImgContainer">
-                <a class="lightb" href="/images/RAuth-AL-final-flows2.jpg" ><img src="/images/RAuth-AL-final-flows2.jpg" title="Armorlock problem"></a>
-                <figcaption>Manager responding to remote access request.</figcaption>
+                <a class="lightb" href="/images/AU-Enable-AU.jpg" ><img src="/images/AU-Enable-AU.jpg" title="Enable Always Unlocked."></a>
+                <figcaption>Enable Always Unlocked.</figcaption>
               </div>
              </div>
   
              <div class="secImage">
               <div class="lrgImgContainer">
-                <a  href="/images/RAuth-AL-final-flows3.jpg" ><img src="/images/RAuth-AL-final-flows3.jpg" title="Armorlock problem"></a>
-                <figcaption>User opens response.</figcaption>
+                <a  href="/images/AU-Disable-AU.jpg" ><img src="/images/AU-Disable-AU.jpg" title="Disable Always Unlocked."></a>
+                <figcaption>Disable Always Unlocked.</figcaption>
               </div>
              </div>
             
@@ -245,7 +195,7 @@
               <h2 class="big-title-light sml">Summary</h2>
               <h2 class="small-title-light" tabindex="11">Summary</h2>
             </div>
-              <p class="text-light">In Summary, we developed a remote access request feature within the limitations we were presented with. We carefully researched our users' needs and then crafted a curated experience to satisfy them. If cloud support is ever on the table for ArmorLock, this will no doubt be deprecated, but in the interim it works beautifully.</p>
+              <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh nec ipsum aliquet eleifend. Aliquam pretium dui vel rutrum maximus. Sed rhoncus, metus ac varius lobortis, lorem nisi feugiat lectus, quis dapibus massa est id lectus. Morbi blandit iaculis nisi. Nunc auctor vitae felis nec malesuada. Suspendisse ac tempor leo, et aliquam erat. Praesent sed nibh nec tortor congue consequat in hendrerit quam. </p>
             </div> 
         </section>
         
