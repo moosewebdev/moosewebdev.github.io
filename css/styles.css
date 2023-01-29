@@ -426,7 +426,11 @@ p {
     padding-left: 5px;
 }
 
+.edu span{
 
+  padding-top:1rem;
+  font-weight: 700;
+}
 .last {
     margin: 0 0px 0 25px;
 }
@@ -520,7 +524,7 @@ a.button-normal:hover{
 
 .tools img {
   margin-right:1.5rem;
-  
+
 }
 .tool {
     display: inline;
@@ -549,13 +553,17 @@ a.button-normal:hover{
 
 #about,
 #work {
-    padding-top: 2em;
+    padding: 2rem 0;
 }
 
 #work, #scribbles{
   background-color:#141D2B;
 }
-
+.Wcontainer {
+  margin: 0 auto;
+  max-width:850px;
+  padding: 0 1rem 0 1rem;
+}
 .small-title {
     position: relative;
     top: -40px;
@@ -571,20 +579,25 @@ a.button-normal:hover{
 }
 
 .piece {
+  border-radius: 15px;
     position: relative;
+    box-shadow: #141d2b 0px 20px 30px 10px;
     
 
 }
 
-.piece,
+.piece a {
+  text-decoration: none;;
+}
+
 .piece img,
 .slider {
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .work img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     -webkit-transition: .5s ease;
     transition: .5s ease;
@@ -627,18 +640,22 @@ a.button-normal:hover{
 
 } */
 .imgHold{
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
   overflow:hidden;
-  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.35);
+  
 
 }
 
 .wTitle {
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+.piece {
+ background-color:#212E3E; 
 }
 
+
 .piece h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #DBE2F0;
     margin-bottom: 0;
     font-weight: 700;
@@ -650,7 +667,7 @@ a.button-normal:hover{
     margin-bottom: 0;
 }
 
-.piece a:hover>.slider {
+/* .piece a:hover>.slider {
     z-index: 1;
     opacity: .75;
 }
@@ -658,13 +675,17 @@ a.button-normal:hover{
 .piece a:hover>span {
     z-index: 1;
     opacity: 1;
-}
-
-.piece a:hover>img {
-    -webkit-transform: scale(1.2);
+} */
+.piece a:hover img {
+  -webkit-transform: scale(1.2);
             transform: scale(1.2);
     z-index: -1;
 }
+/* .piece a:hover>img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index: -1;
+} */
 #scribbles {
     /* margin-top: 2em ;
     margin-bottom: 5em ; */
@@ -1006,6 +1027,10 @@ p.proInfo {
   .pContainer{
       padding: 0px 1rem 0px 1rem;
     }
+
+    .tcontainer {
+      padding-bottom:1.5rem;
+    }
     #intro h1 {
       font-size:2.5rem;
     }
@@ -1015,7 +1040,8 @@ p.proInfo {
     }
     .wTitle {
       margin:0px;
-      padding-top:1rem
+      padding-top:1rem;
+      padding-left:1rem;
     }
     .wTitle h3 {
       font-size:1.2rem;
@@ -1026,6 +1052,9 @@ p.proInfo {
         width: 15em;
         height: 15em;
     }
+    .tools img {
+      margin:.7rem
+    }
     .wTitle p {
       margin-top:.2rem;
       font-size:1rem;
@@ -1035,7 +1064,8 @@ p.proInfo {
     }
 
     .piece {
-        margin-bottom: 2em;
+      
+        margin-bottom: 4rem;
     }
 
     .pAbout p, ol{
@@ -1075,7 +1105,11 @@ p.proInfo {
     .big-title-light {
       font-size:3.7rem;
     }
-
+    
+    
+    #work{
+      padding-top:3rem;
+    }
 }
 
 @media only screen and (min-width:640px) {
@@ -1177,6 +1211,9 @@ p.proInfo {
     nav li:last-child {
         margin-right: 0;
     }
+
+    
+    
 
     /* .pAbout ul {
         list-style: none;
