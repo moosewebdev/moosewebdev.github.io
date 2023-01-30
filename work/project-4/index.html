@@ -57,11 +57,14 @@
 </header>
 
    
-        <div class="project-header"></div>
+        <div class="project-header2">
+          <img src="/images/Alwaysunlockedpageheader.jpg" height="auto">
+        </div>
         <section class="pAbout text-light">
           <div class="pContainer clear">
-            <h2 class="proTitle">ArmorLock Always Unlocked</h2>
+            <h2 class="proTitle">Always Unlocked</h2>
             <p class="text-light proInfo"><Strong>Company: </Strong>Western Digital</p>
+            <p class="text-light proInfo"><Strong>Product: </Strong>ArmorLock</p>
             <p class="text-light padding-sections"><Strong>Role: </Strong>Lead UX/UI Designer, Research, User Testing  </p>
             <div class="tcontainer">
               <h2 class="big-title-light">Overview</h2>
@@ -79,9 +82,18 @@
               <h2 class="big-title-light">Problem</h2>
               <h2 class="small-title-light" tabindex="11">Problem</h2>
             </div>
-            <p class="text-light">The original problem that the ArmorLock platform solved was the secure storage of large amounts of data within the MNE business. ArmorLock is looking to expand its target audience to a broader consumer if the consumer chooses to enable security.  ArmorLock SSDs are shipped with security and Encryption on and have no ability in the current firmware to disable this.</p>
-            <p class="text-light">How do we expand our user base without hindering the plug and play ability of our mass market drives, while still giving the user the option to enable security on ArmorLock enabled drives?</p>
-           </div>
+
+            <p class="text-light">ArmorLock platform is looking to expand its target audience to a broader consumer.  ArmorLock SSDs are shipped in a locked state(security and Encryption enabled) and current firmware does not have the ability to disable this.</p>
+
+            <p class="text-light">This creates an issue when ArmorLock hardware is integrated into new product lines. This current default locked state would hinder the plug and play experience many users are already familiar with when comes to Western Digital HDD & SDD products.  It creates another hurdle users would need to go through in order to use the drive in the expected manner without security or encryption.</p>
+
+            <h3 class="text-light">How do we expand our user base?</h3>
+            
+            <ol>
+              <li>Without hindering the plug and play ability of our mass market drives.</li>
+              <li>While allowing the user the choice to enable security.</li>
+            </ol>
+
            </section>
 
         <section class="pAbout text-light">
@@ -90,15 +102,13 @@
               <h2 class="big-title-light">Research</h2>
               <h2 class="small-title-light" tabindex="11">Research</h2>
             </div>
-            <p class="text-light">The current ArmorLock SSD is shipped with security and encryption enabled and cannot be disabled. This creates an issue when ArmorLock security and encryption is integrated into new product lines it would hinder the plug and play experience many users are already familiar with when comes to  Western Digital HDD & SDD products.  It creates another hurdle users would need to go through in order to use the drive in the expected manner without security or encryption.</p>
-            
             <p class="text-light">For new product lines we need to ship drives in the unlocked state(security and encryption disabled) in order to preserve the expected plug and play experience. If users chose that they needed added security they could then decide to use ArmorLock to do so. While the original ArmorLock drives will still ship in the locked state.</p>
-
-            <p class="text-light">We conducted surveys with our consumer users to identify the appropriate name for the feature. We also interviewed out MNE industry partners who said they had no use of this feature. Their response was expected, as they would probably never use this feature. This feature was being added to expand our user base to users outside the MNE industry. </p>
+            
+            <p class="text-light">We conducted surveys with our consumer users, to identify the appropriate name for the feature. We also interviewed out MNE industry partners who said they had no use of this feature. Their response was expected, as they would probably never use this feature. This feature was being added to expand our user base to users outside the MNE industry. </p>
 
             <p class="text-light">In order to to implement this feature we needed to accomplish:</p>
             <ol>
-              <li>The ability to turn on and off Security and encryption.</li>
+              <li>The ability for the user to boot the drive in either Locked or Unlocked state.</li>
               <li>Preserve the familiar plug and play experience out of the box for new consumers, while giving users the ability to use security and encryption if they choose.</li>
               <li>Continue to support older ArmorLock drives with security & encryption enabled from the factory.</li>
               <li>Naming the feature appropriately.</li> 
@@ -112,9 +122,12 @@
               <h2 class="big-title-light">Journey Map</h2>
               <h2 class="small-title-light" tabindex="11">Journey Map</h2>
             </div>
-            <p class="text-light">We needed to understand how ArmorLock(AL) technology works. The drives currently ship in a locked state. The default state of the drive is locked, every time the drive is plugged in, it will be locked. In order for the drive to be unlocked a user needs to have authorization to the drive. The initial setup of the drive is done using take ownership flow. This syncs the AL app with the drive and allows the user(Manager) to unlock/lock and authorize additional users/managers. </p>
+            <p class="text-light">We needed to understand how ArmorLock(AL) technology works.</p> 
+            
+            <p class="text-light">ArmorLock drives currently ship in a locked state. The default state of the drive is locked, every time the drive is plugged in, it will be locked. In order for the drive to be unlocked a user needs to have authorization to the drive. The initial setup of the drive is done using take ownership flow. This syncs the AL app with the drive and allows the user(Manager) to unlock/lock and authorize additional users/managers.</p> 
 
-            <p class="text-light">How this new feature would work is that security and encryption is always on, but we can toggle the boot sequence to start in the unlocked state allowing users to always have the plug and play experience. While in the unlocked state users/managers can still use the AL app and features. The drive can be used without the need for AL app by anyone. This is because the drive will always boot into the unlocked state.</p>
+            <p class="text-light">How this new feature would work is that security and encryption is always on, but we can toggle the boot sequence to start in the unlocked state allowing users to always have the plug and play experience. While in the unlocked state the drive can be used by anyone without the AL app. Users and managers can still use the AL app and features.</p>
+
             <p class="text-light">Lets familiarize our self with the current high level user journey.</p>
            </div>
 
@@ -125,7 +138,7 @@
             </div>
            </div>
            <div class="pContainer clear">
-           <p class="text-light">In order to preserve the plug and play experience of our new SSD products and incorporate the ability to use AL technology into these new drives. We would need to ship the drives in the unlocked state. We needed to add another entry point into our onboarding flow. As well as an exit point for users choosing to return the drive to the unlocked state.</p>
+           <p class="text-light">In order to preserve the plug and play experience of our new SSD products and incorporate the ability to use AL technology into these new drives. We would need to ship the drives in the unlocked state. This would require another entry point into our onboarding flow. As well as an exit point for users choosing to return the drive to the unlocked state.</p>
             </div>
            <div class="secImage padding-sections">
             <div class="medImgContainer">
@@ -143,12 +156,10 @@
             </div>
             <p class="text-light">While the feature was a toggle in the drive settings panel we really wanted to make sure the naming of the feature and the user’s understanding of the feature was bang on.</p>
 
-            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh nec ipsum aliquet eleifend. Aliquam pretium dui vel rutrum maximus. Sed rhoncus, metus ac varius lobortis, lorem nisi feugiat lectus, quis dapibus massa est id lectus. Morbi blandit iaculis nisi. Nunc auctor vitae felis nec malesuada. Suspendisse ac tempor leo, et aliquam erat. Praesent sed nibh nec tortor congue consequat in hendrerit quam. </p>
-
-            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh nec ipsum aliquet eleifend. Aliquam pretium dui vel rutrum maximus. Sed rhoncus, metus ac varius lobortis, lorem nisi feugiat lectus, quis dapibus massa est id lectus. Morbi blandit iaculis nisi. Nunc auctor vitae felis nec malesuada. Suspendisse ac tempor leo, et aliquam erat. Praesent sed nibh nec tortor congue consequat in hendrerit quam. </p>
+            <p class="text-light">We conducted A/B testing with the two names that ranked highest in our previous surveys. We found that Always Unlocked was perceived as the intuitive name for the feature.</p>
             <ul class="protoLinks">
-              <li><a href="https://www.figma.com/proto/jSz0TvdL3zkafdn6j8gNa7/iOS-1.8-Always-Unlocked-aka-Open-Access?page-id=2%3A9&node-id=4%3A28178&viewport=1253%2C1683%2C0.25&scaling=scale-down&starting-point-node-id=4%3A28178&show-proto-sidebar=1" target="_blank">iOS Prototypes</a></li>
-              <li><a href="#">macOS Prototypes</a></li>
+              <li><a href="https://www.figma.com/proto/jSz0TvdL3zkafdn6j8gNa7/iOS-1.8-Always-Unlocked-aka-Open-Access?page-id=2%3A9&node-id=4%3A28178&viewport=1253%2C1683%2C0.25&scaling=scale-down&starting-point-node-id=4%3A28178&show-proto-sidebar=1" target="_blank" title="macOS Prototypes" alt="iOS Prototypes">iOS Prototypes</a></li>
+              <li><a href="https://www.figma.com/proto/uPf0q8WpsNbYNWj6nYqh4t/macOS-1.8-Always-Unlocked-aka-Open-Access?page-id=2%3A9&node-id=6%3A74977&viewport=-130%2C1367%2C0.19&scaling=contain&starting-point-node-id=6%3A74977&show-proto-sidebar=1" target="_blank" title="macOS Prototypes" alt="macOS Prototypes">macOS Prototypes</a></li>
             </ul>
             
             
@@ -161,8 +172,6 @@
               <h2 class="big-title-light">Final Flows</h2>
               <h2 class="small-title-light" tabindex="11">Final Flows</h2>
             </div>
-           
-              <p class="text-light">Now that we had the data to understand our users needs, it was time to design. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh nec ipsum aliquet eleifend. Aliquam pretium dui vel rutrum maximus. Sed rhoncus, metus ac varius lobortis, lorem nisi feugiat lectus, quis dapibus massa est id lectus. Morbi blandit iaculis nisi. Nunc auctor vitae felis nec malesuada. Suspendisse ac tempor leo, et aliquam erat. Praesent sed nibh nec tortor congue consequat in hendrerit quam.I used Figma to develop the following flows, and worked cross-functionally with others to develop the following flows:</p>
             </div>
             <div class="secImage padding-sections">
                 <div class="lrgImgContainer">
@@ -195,7 +204,9 @@
               <h2 class="big-title-light sml">Summary</h2>
               <h2 class="small-title-light" tabindex="11">Summary</h2>
             </div>
-              <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh nec ipsum aliquet eleifend. Aliquam pretium dui vel rutrum maximus. Sed rhoncus, metus ac varius lobortis, lorem nisi feugiat lectus, quis dapibus massa est id lectus. Morbi blandit iaculis nisi. Nunc auctor vitae felis nec malesuada. Suspendisse ac tempor leo, et aliquam erat. Praesent sed nibh nec tortor congue consequat in hendrerit quam. </p>
+              <p class="text-light">The initial feedback on this feature has been great, even our MNE clients have started using this feature to unlock the drive to share files in large group settings. </p>
+
+                <p class="text-light"> While the new product lines that incorporate ArmorLock technology have yet to release, the platform is ready and currently being tested internally.</p>
             </div> 
         </section>
         

@@ -809,14 +809,43 @@ a.button-normal:hover{
     width: 100%;
     position: relative;
     
-    background: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.1)), url("/images/RAuth-pageHero.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, .3) 0%, rgba(255,255,255,0)20%), url("/images/RAuth-pageHero.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     height:60vh;
 
     min-height: 450px;
     max-height: 762px;;
+}
+
+.project-header2 {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; 
+  position: relative;
+  background: rgb(0,0,0);
+  
+  background: linear-gradient(180deg, rgba(0, 0, 0, .3) 0%, rgba(255,255,255,0)20%); 
+  /*url("/images/Alwaysunlockedpageheader.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 10vh;
+
+  min-height: 450px;
+  max-height: 762px;; */
+}
+.project-header2 img {
+  position:relative;
+  margin:0 auto;
+  
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.1)); */
+  z-index: -1;
+  object-fit: cover;
+  object-position: bottom;
+  max-height:60vh;
+  width:100%
 }
 
 section {
@@ -916,6 +945,7 @@ iframe {
     min-height: 450px;
     
 }
+
 
 .btmFooter {
     width: 100%;
@@ -1080,8 +1110,8 @@ p.proInfo {
       margin-bottom: .5rem;
       
     }
-  .pAbout.proInfo {
-  margin-bottom:.5rem;
+    .pAbout .proInfo {
+      margin-bottom:.5rem;
 }
 
     .pAbout ol {
@@ -1109,6 +1139,9 @@ p.proInfo {
     
     #work{
       padding-top:3rem;
+    }
+    .project-header2 img {
+      height: 35vh;
     }
 }
 
