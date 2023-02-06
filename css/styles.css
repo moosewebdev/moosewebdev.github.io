@@ -13,6 +13,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
+    background-color:#141d2b;
 }
 
 html {
@@ -686,12 +687,58 @@ a.button-normal:hover{
             transform: scale(1.2);
     z-index: -1;
 } */
+
+.smlCard {
+  text-decoration: none;
+  width: 45%;
+  display: inline-block;
+  background-color: #212E3E;
+  border-radius: 1rem;
+  padding:1rem 2rem;
+  box-sizing: border-box;
+  position:relative;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, .10);
+}
 #scribbles {
     /* margin-top: 2em ;
     margin-bottom: 5em ; */
     text-align: center;
    
 }
+
+.leftB {
+  margin-right:1.5rem;
+  text-align: left;
+}
+.leftB span{
+  margin-left:.5rem;
+}
+
+.rightB span{
+  margin-right:.5rem;
+}
+
+
+.smlCard span {
+  color:#fff;
+  font-size:1.5rem;
+  
+}
+
+.smlCard img {
+  position:relative;
+  top:.6rem;
+}
+
+
+.rightB {
+  margin-right:1.5rem;
+  text-align: right;
+}
+
+
+
+
 
 #scribbles h2 {
     font-size:1.2em;
@@ -841,7 +888,7 @@ a.button-normal:hover{
   margin:0 auto;
   
   /* background: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.1)); */
-  z-index: -1;
+  z-index: 2;
   object-fit: cover;
   object-position: bottom;
   max-height:60vh;
@@ -959,6 +1006,14 @@ iframe {
   line-height: 2.4rem;
   margin-bottom: 1.5rem;
   
+}
+
+.pAbout .nName{
+  color:#DBE2F0;
+  font-weight: 700;
+  font-size:1.75rem;
+  margin-bottom:0px;
+  margin-top:.25rem;
 }
 .pAbout ol {
   margin-left:3rem;
@@ -1134,6 +1189,14 @@ p.proInfo {
     }
     .big-title-light {
       font-size:3.7rem;
+    }
+
+    .smlCard {
+      
+      width: 100%;
+      margin-bottom:2rem;
+      text-align: center;
+      
     }
     
     
