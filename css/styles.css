@@ -1222,6 +1222,7 @@ p.proInfo {
 
     .about {
       background: linear-gradient(107deg, rgba(246, 246, 246, 1) 0%, rgba(246, 246, 246, 1) 50%, rgba(215, 235, 238, 1) 50%, rgba(215, 235, 238, 1) 100%);
+    }
       
     .upper-fold::before {
         top: 15%;
