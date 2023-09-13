@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,400i,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="https://kit.fontawesome.com/3155848460.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" title="AG" alt="AG"><img src="assets/AG-brand.svg"></a>
+      <nav class="dMenu">
+
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#work">Work</a></li>
+          <!-- <li><a class="scroll" href="#about">About</a></li> -->
+          <li> <a class="btn-Secondary" href="mailto:agudbranson@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="toggle"><i class="fa fa-bars"></i></div>
+    </div>
+    <nav class="rMenu ">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#work">Work</a></li>
+        <!-- <li><a href="/#about">About</a></li> -->
+        <li class="rContact"> <a class="btn-Secondary" href="mailto:agudbranson@gmail.com">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+        <section class="pAbout textLight">
+
+          <div class="secImage">
+            <div class="medImgContainer">
+              <a class="lightb" href="assets/AlwaysUnlockedThubmnail.png"><img src="assets/AlwaysUnlockedThubmnail.png"
+                  title="Armorlock problem"></a>
+    
+    
+            </div>
+          </div>
+          <div class="pContainer clear">
+            <h2 class="proTitle">Always Unlocked</h2>
+            <p class="textLight proInfo"><Strong>Company: </Strong>Western Digital</p>
+            <p class="textLight proInfo"><Strong>Product: </Strong>ArmorLock</p>
+            <p class="textLight padding-sections"><Strong>Role: </Strong>Lead UX/UI Designer, Research, User Testing  </p>
+            <div class="Wcontainer">
+              <div class="tcontainer">
+                      <h2 class="big-title textUltraLight">Overview</h2>
+                      <h2 class="small-title textLight" tabindex="11">Overview</h2>
+              </div>
+            </div>
+            <p class="textLight">The G-DRIVE ArmorLock SSD and app deliver next-generation security and new-generation simplicity combined with powerful, pro-grade performance to help protect users most critical content. Encryption is only the beginning.</p>
+            <p class="textLight">The target market is the MNE (Movie and Entertainment) business. Entertainment studios across the world need a secure solution for storing huge amounts of high-quality footage, audio, and more. In conjunction with its associated software, the ArmorLock SSD enables users to securely store content on a drive and then control access it.</p>
+           
+         
+        </div>
+        </section>
+        <section class="pAbout textLight">
+          <div class="pContainer clear">
+            <div class="Wcontainer">
+              <div class="tcontainer">
+                      <h2 class="big-title textUltraLight">Problem</h2>
+                      <h2 class="small-title textLight" tabindex="11">Problem</h2>
+              </div>
+            </div>
+
+            <p class="textLight">ArmorLock platform is looking to expand its target audience to a broader consumer.  ArmorLock SSDs are shipped in a locked state(security and Encryption enabled) and current firmware does not have the ability to disable this.</p>
+
+            <p class="textLight">This creates an issue when ArmorLock hardware is integrated into new product lines. This current default locked state would hinder the plug and play experience many users are already familiar with when comes to Western Digital HDD & SDD products.  It creates another hurdle users would need to go through in order to use the drive in the expected manner without security or encryption.</p>
+
+            <h3 class="textLight">How do we expand our user base?</h3>
+            
+            <ol>
+              <li>Without hindering the plug and play ability of our mass market drives.</li>
+              <li>While allowing the user the choice to enable/disable security.</li>
+            </ol>
+
+           </section>
+
+        <section class="pAbout textLight">
+          <div class="pContainer clear">
+            <div class="Wcontainer">
+              <div class="tcontainer">
+                      <h2 class="big-title textUltraLight">Research</h2>
+                      <h2 class="small-title textLight" tabindex="11">Research</h2>
+              </div>
+            </div>
+            <p class="textLight">For new product lines we need to ship drives in the unlocked state(security and encryption disabled) in order to preserve the expected plug and play experience. If users chose that they needed added security they could then decide to use ArmorLock to do so. While the original ArmorLock drives will still ship in the locked state.</p>
+            
+            <p class="textLight">We conducted surveys with our consumer users, to identify the appropriate name for the feature. We also interviewed out MNE industry partners who said they had no use of this feature. Their response was expected, as they would probably never use this feature. This feature was being added to expand our user base to users outside the MNE industry. </p>
+
+            <p class="textLight">In order to to implement this feature we needed to accomplish:</p>
+            <ol>
+              <li>The ability for the user to boot the drive in either Locked or Unlocked state.</li>
+              <li>Preserve the familiar plug and play experience out of the box for new consumers, while giving users the ability to use security and encryption if they choose.</li>
+              <li>Continue to support older ArmorLock drives with security & encryption enabled from the factory.</li>
+              <li>Naming the feature appropriately.</li> 
+            </ol>
+           </div>
+          </section>
+
+        <section class="pAbout textLight">
+          <div class="pContainer clear">
+            <div class="Wcontainer">
+              <div class="tcontainer">
+                      <h2 class="big-title textUltraLight">Journey Map</h2>
+                      <h2 class="small-title textLight" tabindex="11">Journey Map</h2>
+              </div>
+            </div>
+            <p class="textLight">We needed to understand how ArmorLock(AL) technology works.</p> 
+            
+            <p class="textLight">ArmorLock drives currently ship in a locked state. The default state of the drive is locked, every time the drive is plugged in, it will be locked. In order for the drive to be unlocked a user needs to have authorization to the drive. The initial setup of the drive is done using take ownership flow. This syncs the AL app with the drive and allows the user(Manager) to unlock/lock and authorize additional users/managers.</p> 
+
+            <p class="textLight">How this new feature would work is that security and encryption is always on, but we can toggle the boot sequence to start in the unlocked state allowing users to always have the plug and play experience. While in the unlocked state the drive can be used by anyone without the AL app. Users and managers can still use the AL app and features.</p>
+
+            <p class="textLight">Lets familiarize our self with the current high level user journey.</p>
+           </div>
+
+           <div class="secImage padding-sections">
+            <div class="medImgContainer">
+              <a class="lightb" href="assets/AU-onboarding-original.jpg" ><img src="assets/AU-onboarding-original.jpg" title="High level onboarding of original ArmorLock drive."></a>
+              <figcaption>High level onboarding of original ArmorLock drive.</figcaption>
+            </div>
+           </div>
+           <div class="pContainer clear">
+           <p class="textLight">In order to preserve the plug and play experience of our new SSD products and incorporate the ability to use AL technology into these new drives. We would need to ship the drives in the unlocked state. This would require another entry point into our onboarding flow. As well as an exit point for users choosing to return the drive to the unlocked state.</p>
+            </div>
+           <div class="secImage padding-sections">
+            <div class="medImgContainer">
+              <a class="lightb" href="assets/AU-onboarding-updated.jpg" ><img src="assets/AU-onboarding-updated.jpg" title="Updated high level onboarding of new ArmorLock drives."></a>
+              <figcaption>Updated high level onboarding of new ArmorLock drives.</figcaption>
+            </div>
+           </div>
+          </section>
+
+        <section class="pAbout textLight">
+          <div class="pContainer clear">
+            <div class="Wcontainer">
+              <div class="tcontainer">
+                      <h2 class="big-title textUltraLight">User Testing</h2>
+                      <h2 class="small-title textLight" tabindex="11">User Testing</h2>
+              </div>
+            </div>
+            <p class="textLight">While the feature was a toggle in the drive settings panel we really wanted to make sure the naming of the feature and the user’s understanding of the feature was bang on.</p>
+
+            <p class="textLight">We conducted A/B testing with the two names that ranked highest in our previous surveys. We found that Always Unlocked was perceived as the intuitive name for the feature.</p>
+            <ul class="protoLinks">
+              <li><a href="https://www.figma.com/proto/jSz0TvdL3zkafdn6j8gNa7/iOS-1.8-Always-Unlocked-aka-Open-Access?page-id=2%3A9&node-id=4%3A28178&viewport=1253%2C1683%2C0.25&scaling=scale-down&starting-point-node-id=4%3A28178&show-proto-sidebar=1" target="_blank" title="macOS Prototypes" alt="iOS Prototypes">iOS Prototypes</a></li>
+              <li><a href="https://www.figma.com/proto/uPf0q8WpsNbYNWj6nYqh4t/macOS-1.8-Always-Unlocked-aka-Open-Access?page-id=2%3A9&node-id=6%3A74977&viewport=-130%2C1367%2C0.19&scaling=contain&starting-point-node-id=6%3A74977&show-proto-sidebar=1" target="_blank" title="macOS Prototypes" alt="macOS Prototypes">macOS Prototypes</a></li>
+            </ul>
+            
+            
+           </div> 
+        </section>
+
+        <section class="pAbout textLight">
+          <div class="pContainer clear">
+            <div class="Wcontainer">
+              <div class="tcontainer">
+                      <h2 class="big-title textUltraLight">Final Flows</h2>
+                      <h2 class="small-title textLight" tabindex="11">Final Flows</h2>
+              </div>
+            </div>
+            </div>
+            <div class="secImage padding-sections">
+                <div class="lrgImgContainer">
+                  <a class="lightb" href="assets/AU-main-screens.jpg" ><img src="assets/AU-main-screens.jpg" title="Always Unlocked main screen updates."></a>
+                <figcaption>Always Unlocked main screen updates.</figcaption>
+             </div>
+             </div>
+  
+             <div class="secImage padding-sections">
+              <div class="lrgImgContainer">
+                <a class="lightb" href="assets/AU-Enable-AU.jpg" ><img src="assets/AU-Enable-AU.jpg" title="Enable Always Unlocked."></a>
+                <figcaption>Enable Always Unlocked.</figcaption>
+              </div>
+             </div>
+  
+             <div class="secImage">
+              <div class="lrgImgContainer">
+                <a  href="assets/AU-Disable-AU.jpg" ><img src="assets/AU-Disable-AU.jpg" title="Disable Always Unlocked."></a>
+                <figcaption>Disable Always Unlocked.</figcaption>
+              </div>
+             </div>
+            
+            
+           
+        </section>
+
+        <section class="pAbout textLight">
+          <div class="pContainer clear">
+            <div class="Wcontainer">
+              <div class="tcontainer">
+                      <h2 class="big-title textUltraLight">Summary</h2>
+                      <h2 class="small-title textLight" tabindex="11">Summary</h2>
+              </div>
+            </div>
+              <p class="textLight">The initial feedback on this feature has been great, even our MNE clients have started using this feature to unlock the drive to share files in large group settings. </p>
+
+                <p class="textLight"> While the new product lines that incorporate ArmorLock technology have yet to release, the platform is ready and currently being tested internally.</p>
+            </div> 
+        </section>
+
+
+
+        <section class="pAbout textLight">
+          <div class="pContainer clear">
+      
+            <a href="RemoteAuthorization.html" class="leftB smlCard textLight" title="This is a title">
+              <img src="assets/Left-arrow.svg"> <span>Back</span>
+              <p class="nName">Remote Authorization</p>
+            </a>
+      
+      
+            <a href="LMSDashboard.html" class="rightB smlCard textLight" title="This is a title">
+              <span>Next</span> <img src="assets/Right-arrow.svg">
+              <p class="nName">LMS Dashboard</p>
+            </a>
+      
+          </div>
+        </section>
+        
+        
+        
+        <div class="footer">
+          <div class="container">
+                  <div class="footer-logo">
+                          <a href="/"><img src="assets/AG-logo-white-green.svg" width="66" height="39">
+                          </a>
+                  </div>
+      
+      
+                  <div class="footer-tagline">
+                          <p class="tagline"><em>Dream. Design. Build<em></p>
+                  </div>
+                  <div class="social-media">
+                          <a href="http://www.linkedin.com/in/adric-gudbranson-19070a19" target="_blank"
+                                  title="LinkedIn" alt="LinkedIn"><img src="assets/linkedIn.svg"></a>
+      
+                          <a href="https://github.com/moosewebdev" target="_blank" title="Github"
+                                  alt="Github"><img src="assets/Git.svg"></a>
+                          <a href="https://twitter.com/MooseWebDev" target="_blank" title="Twitter"
+                                  alt="Twitter"><img src="assets/Twitter.svg">
+                                </a>
+                          <a href="https://teamtreehouse.com/adricg" target="_blank" title="TeamTreehouse"
+                                  alt="TeamTreehouse"><img src="assets/TeamTreehouse.svg"></a>
+                  </div>
+                  <div class="copyright">
+                          <span>&copy;2023 Adric Gudbranson</span>
+                  </div>
+          </div>
+      </div>
+    
+    </div>
+
+    
+
+
+</body>
+
+
+
+
+</html>
