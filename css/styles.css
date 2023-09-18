@@ -92,14 +92,15 @@ body {
 .btn {
   display: inline-block;
   background-color: #0ACAD6;
-  padding: 1rem 1.8rem;
-  border-radius: 0.6rem;
+  border: 2px solid #0acad6;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
   width: 100%;
   margin-top: 1rem;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #141C20;
   text-align: center;
   cursor: pointer;
@@ -107,16 +108,38 @@ body {
 }
 .btn:hover {
   background-color: #259FA7;
+  border: 2px solid #259fa7;
 }
 
 .btn-Secondary {
   border: 2px solid #0ACAD6;
-  border-radius: 0.6rem;
+  border-radius: 50px;
   padding: 0.6rem 1.5rem;
   transition: border-color 0.2s ease-in;
 }
 .btn-Secondary:hover {
   border-color: rgba(10, 202, 214, 0.5);
+}
+
+.btn-text-icon {
+  width: fit-content;
+}
+.btn-text-icon a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  color: #0ACAD6;
+}
+.btn-text-icon a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.3rem 0.13331rem 0.3rem 0.16669rem;
+}
+.btn-text-icon a:visited {
+  color: #0ACAD6;
 }
 
 header {
@@ -352,7 +375,7 @@ header .rMenu ul li a {
   margin-bottom: 2rem;
 }
 .pContainer p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
   line-height: 165%; /* 2.25rem */
@@ -374,7 +397,7 @@ header .rMenu ul li a {
 }
 .pContainer ol {
   padding-left: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 3rem;
   line-height: 165%;
 }
@@ -383,7 +406,6 @@ header .rMenu ul li a {
   color: rgba(255, 255, 255, 0.7);
   padding-left: 1rem;
   margin-bottom: 1rem;
-  line-height: 150%;
 }
 .pContainer ol .innerList {
   margin-left: 0px;
@@ -554,6 +576,24 @@ p.proInfo {
   }
   .pContainer {
     padding: 0px 10px 0px 10px;
+  }
+  .pContainer p {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165%; /* 2.25rem */
+  }
+  .pContainer ol {
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    line-height: 165%;
+  }
+  .pContainer ol li {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
   }
   #work {
     background-color: #101824;
